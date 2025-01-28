@@ -348,8 +348,9 @@ header {
   .card:hover .quick-view {
     display: block; /* Hide the button on hover */
   }
-  .card-title .card-text{
-    font-size: 16px;
+  .card-title {
+    color: #00194D;
+    font-weight: 700;
   }
 
     /* Tooltip container */
@@ -406,3 +407,71 @@ header {
         align-items: center;
         margin-bottom: 10px;
       }
+      /* -------------testimonials--------------- */
+      .testimonial-card {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #f9f9f9;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+      /* Responsive styles */
+  @media (max-width: 768px) {
+    .testimonial-card {
+        width: 100%;
+    }
+  }
+    .testimonial-card .profile-img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        border: 2px solid #00194D;
+        object-fit: cover;
+        margin-bottom: 15px;
+    }
+    
+    .testimonial-card p {
+        font-size: 16px;
+        color: #333;
+    }
+    
+    .testimonial-card h4 {
+        font-size: 18px;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+    
+    .testimonial-card p:last-child {
+        font-style: italic;
+        color: #888;
+    }
+    /* -------------Footer--------------- */
+    .footer{
+        background-color: #00194D;
+        color: white;
+    }
+    .footer_list{
+        list-style-type: none;
+     
+        padding: 0%;
+    }
+    .footer_list li{
+        margin-bottom: 1rem;
+    }
+    .footer_list li a{
+        text-decoration: none;
+        color: white;
+    }
+    .footer_btn{
+        display: block;
+        padding: 10px 50px;
+        border: none;
+        background-color: #e71b00;
+        color: white;
+        font-weight: 700;
+    }
