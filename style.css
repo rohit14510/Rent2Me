@@ -495,3 +495,218 @@ header {
         color: white;
         font-weight: 700;
     }
+    /* --------------------Contact--------------------- */
+    .service_Section {
+      position: relative;
+      width: 100%;
+      height: 300px; /* Adjust height as needed */
+      overflow: hidden;
+    }
+    
+    .service_Section img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+     
+    }
+    
+    .service_Section_overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(12, 18, 57, 0); /* Semi-transparent overlay */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .service_Section_content {
+      color: #fff;
+      text-align: center;
+    }
+    
+    .service_Section_content h2 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin: 0;
+    }
+    
+    .service_Section_content p {
+   
+      margin-top: 15px;
+      padding: 10px 20px;
+      font-size: 1.2rem;
+      display:inline-block;
+      
+    }
+    @media (max-width: 768px) {
+      .service_Section {
+        position: relative;
+        width: 100%;
+        height: 150px; /* Adjust height as needed */
+        overflow: hidden;
+      }
+      .service_Section_content h2 {
+        font-size: 2rem;
+        font-weight: 700;
+        margin: 0;
+      }
+      
+      .service_Section_content p {
+      
+        margin-top: 15px;
+        padding: 4px 10px;
+        font-size: .8rem;
+        
+      }
+    }
+    .contact-info {
+      background-color: #f8f9fa;
+    }
+    
+    .contact-info .card {
+      background: #fff;
+      border-radius: 10px;
+    }
+    
+    .contact-info .icon {
+      background: #e7f1ff;
+      width: 80px;
+      height: 80px;
+      line-height: 80px;
+      border-radius: 50%;
+      margin: 0 auto;
+    }
+.icon{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}    
+/* ----------------------Gallery --------------------- */
+#lightgallery a {
+  margin:10px;
+
+
+}
+#lightgallery{
+  display: inline-block;
+  text-align: center;
+}
+
+#lightgallery img {
+  width: 250px;
+  height: auto;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+  margin: 10px;
+}
+
+#lightgallery img:hover {
+  transform: scale(1.1);
+}
+/* ----------------Service--------------------- */
+ /* -------------------------------------------------Poster----------------------------------------------------------------------- */
+ .poster {
+  position: relative;
+  overflow: hidden;
+}
+
+.poster img {
+  display: block;
+}
+
+
+.poster_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(12, 18, 57, .7); /* Semi-transparent black overlay */
+  z-index: 1;
+}
+
+.poster_content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  color: #fff; /* Text color */
+}
+
+.poster_content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.poster_content p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.poster_content .btn {
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.3rem;
+}
+@media (max-width: 768px) {
+  .poster img{
+      width: 100%;
+      height: 20vh;
+  }
+  .poster_content h1 {
+      font-size:1rem !important;
+      margin-bottom:10px;
+  }
+  
+  .poster_content p {
+      font-size:.6rem;
+      margin-bottom:10px;
+  }
+}
+/* -------------------About--------------------- */
+.about-icon{
+  background-color: white;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon-Color{
+  color: #EF7F1A;
+}
+.ProjecrCard{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.accordion-header .accordion-button {
+  font-size: 1.25rem; /* Increase font size */
+  font-weight: 500; /* Make it bold */
+}
+
+.accordion-item {
+  border: 1px solid #ddd !important; /* Add a light border */
+  border-radius: 5px; /* Add rounded corners */
+  margin-bottom: 10px; /* Add spacing between accordion items */
+}
+
+.accordion-item:last-child {
+  margin-bottom: 0; /* Remove margin for the last item */
+}
+.accordion-button:not(.collapsed) {
+  background-color: white; /* Active background color */
+  color: #EF7F1A; /* Active text color */
+}
+.accordion-button:focus {
+  box-shadow: none !important; /* Remove focus outline */
+  border-color: red !important; /* Focus border color */
+}
