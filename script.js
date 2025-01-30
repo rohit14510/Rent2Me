@@ -25,3 +25,10 @@ document.addEventListener('DOMContentLoaded', function () {
         },
     }).mount();
 });
+document.querySelectorAll('.quick-view').forEach(button => {
+    button.addEventListener('click', function () {
+      const product = this.getAttribute('data-product');
+      document.querySelector('#services').value = product;
+    });
+  });
+  
