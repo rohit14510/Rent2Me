@@ -11,6 +11,15 @@ document.addEventListener('DOMContentLoaded', function () {
         interval: 2000,
     }).mount();
 });
+// Product-splide
+document.addEventListener('DOMContentLoaded', function () {
+    new Splide('#Product-splide', {
+        type: 'loop',
+        perPage: 1,
+        autoplay: true,
+        interval: 2000,
+    }).mount();
+});
 // Testimonials_splide Slider
 document.addEventListener('DOMContentLoaded', function () {
     new Splide('#Testimonials_splide', {
