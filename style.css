@@ -177,6 +177,13 @@ header {
   align-items: center;
   background-color: #EF7F1A;
 }
+.Raise-Hand {
+  bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #A72628;
+}
 .quick_contact_icon {
  
 }
@@ -599,6 +606,24 @@ header {
   justify-content: center;
   align-items: center;
 }    
+.step {
+  margin-bottom: 2rem;
+}
+.step-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.feature-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.feature-card {
+  padding: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
 /* ----------------------Gallery --------------------- */
 #lightgallery a {
   margin:10px;
