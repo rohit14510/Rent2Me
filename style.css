@@ -164,26 +164,20 @@ header {
   transition: transform 0.5s ease;
 }
 .qwhtsapp {
-  bottom: 80px;
+  bottom: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #25d366;
 }
 .qcall {
-  bottom: 160px;
+  bottom: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #EF7F1A;
 }
-.Raise-Hand {
-  bottom: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #A72628;
-}
+
 .quick_contact_icon {
  
 }
@@ -194,6 +188,86 @@ header {
 .my-float{
 	margin-top:16px;
 }
+  /* Floating Button */
+  #complaintBtn {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #EF7F1A;
+    color: white;
+    padding: 10px;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    border: none;
+    border-radius: 8px 0 0 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: background-color 0.3s;
+    z-index: 1000;
+  }
+
+  #complaintBtn:hover {
+    background-color: #00194D;
+  }
+
+  /* Popup Form */
+  #enquiryForm {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 2px solid #00194D;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 1000;
+    width: 90%;
+    max-width: 400px;
+    box-sizing: border-box;
+    z-index: 10000;
+  }
+
+  #enquiryForm h3 {
+    margin-top: 0;
+  }
+
+  #enquiryForm input, #enquiryForm textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  #enquiryForm button {
+    background-color: #00194D;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  #enquiryForm button:hover {
+    background-color: #EF7F1A;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 480px) {
+    #complaintBtn {
+      padding: 8px;
+    }
+
+    #enquiryForm {
+      width: 95%;
+      padding: 15px;
+    }
+  }
 /* -----------------Slider-------------------- */
 /* General styles for the slider */
 .splide__slide {
@@ -277,7 +351,12 @@ header {
     color: white;
     border-radius: 10px;
     border: none;
+    text-decoration: none;
 }  
+.Contact-btn:hover{
+  background-color: #0B3A75;
+  color: white;
+}
 /* ------------Featured Products-------------- */
 .card {
     border-radius: 12px;

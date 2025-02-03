@@ -41,3 +41,16 @@ document.querySelectorAll('.quick-view').forEach(button => {
     });
   });
   
+  const complaintBtn = document.getElementById('complaintBtn');
+  const enquiryForm = document.getElementById('enquiryForm');
+
+  complaintBtn.addEventListener('click', () => {
+    enquiryForm.style.display = enquiryForm.style.display === 'block' ? 'none' : 'block';
+  });
+
+  // Close form when clicking outside
+  window.addEventListener('click', (event) => {
+    if (event.target !== complaintBtn && !enquiryForm.contains(event.target)) {
+      enquiryForm.style.display = 'none';
+    }
+  });
