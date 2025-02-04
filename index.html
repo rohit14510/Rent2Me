@@ -273,7 +273,7 @@
                     <div class="top-card">
                         <div class="img-container rounded">
                             <!-- Default image -->
-                            <img src="assets/about (2).jpg" class="card-img-top rounded" alt="Product Image">
+                            <img src="assets/oil_Heater.jpg" class="card-img-top rounded" alt="Product Image">
                             <!-- Hover image -->
                             <img src="assets/Room Heater2.jpg" class="hover-image" alt="Hover Product Image">
                             <div class="icon-container">
@@ -282,7 +282,7 @@
                         </div>
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">Room Heater</h5>
+                        <h5 class="card-title">Oil Heater</h5>
                         <table class="table product-card-table">
                             <thead>
                             </thead>
@@ -1442,32 +1442,33 @@
                         <!-- <p class="text-muted">Contact  Tata Relocation Ac Rental Service for reliable, efficient, and hassle-free moving solutions tailored to your needs.</p>
                 -->
                     </div>
-                    <form action="https://api.web3forms.com/submit" method="POST">
-                        <input type="hidden" name="access_key" value="">
+                    <!-- AKfycbymEzOgkA6CPUbTWx97Ni-2YfCshgWLwGcaYG2EDAFXFKEppc_Ycx3IfhqxFt0Rl_DW
+                    https://script.google.com/macros/s/AKfycbymEzOgkA6CPUbTWx97Ni-2YfCshgWLwGcaYG2EDAFXFKEppc_Ycx3IfhqxFt0Rl_DW/exec -->
+                    <form id="form"> 
                         <div class="row">
                             <div class="form-group col-md-6 mb-2">
-                                <label class="text-white" for="">Name</label>
-                                <input type="text" name="name" class="form-control" placeholder="Your Name">
+                                <label class="text-white">Name</label>
+                                <input type="text" name="name" class="form-control" placeholder="Your Name" required>
                             </div>
                             <div class="form-group col-md-6 mb-2">
-                                <label class="text-white" for="">Email</label>
-                                <input type="email" class="form-control" placeholder="Enter Email">
+                                <label class="text-white">Email</label>
+                                <input type="email" name="email" class="form-control" placeholder="Enter Email" required>
                             </div>
                         </div>
                         <div class="row">
                             <div class="form-group col-md-6 mb-2">
-                                <label class="text-white" for="">Phone Number</label>
-                                <input type="text" name="Phone number" class="form-control" placeholder="Phone Number">
+                                <label class="text-white">Phone Number</label>
+                                <input type="text" name="phone" class="form-control" placeholder="Phone Number" required>
                             </div>
                             <div class="form-group col-md-6 mb-2">
-                                <label class="text-white" for="">WhatsApp Number</label>
-                                <input type="text" name="Whatsapp number" class="form-control" placeholder="Whatsapp Number">
+                                <label class="text-white">WhatsApp Number</label>
+                                <input type="text" name="whatsapp" class="form-control" placeholder="WhatsApp Number" required>
                             </div>
                         </div>
                         <div class="row">
                             <div class="form-group col-md-6 mb-2">
-                                <label class="text-white" for="services">Rented Product</label>
-                                <select class="form-control" name="Rented Product" id="services">
+                                <label class="text-white">Rented Product</label>
+                                <select class="form-control" name="rentedProduct" required>
                                     <option value="Geyser">Geyser</option>
                                     <option value="Split AC">Split AC</option>
                                     <option value="Window AC">Window AC</option>
@@ -1477,30 +1478,30 @@
                                 </select>
                             </div>
                             <div class="form-group col-md-6 mb-2">
-                                <label class="text-white" for="services">Duration</label>
-                                <select class="form-control" name="Duration" id="services">
+                                <label class="text-white">Duration</label>
+                                <select class="form-control" name="duration" required>
                                     <option value="3 Months">3 Months</option>
                                     <option value="6 Months">6 Months</option>
                                     <option value="12 Months">12 Months</option>
-                        
                                 </select>
                             </div>
-                           
                         </div>
-                       <div class="row">
-                        <div class="form-group col-md-6 mb-2">
-                            <label class="text-white" for="">Address</label>
-                            <textarea  name="Addres" rows="5" class="form-control"  placeholder="Your Address"></textarea>
+                        <div class="row">
+                            <div class="form-group col-md-6 mb-2">
+                                <label class="text-white">Address</label>
+                                <textarea name="address" rows="5" class="form-control" placeholder="Your Address" required></textarea>
+                            </div>
+                            <div class="form-group col-md-6 mb-2">
+                                <label class="text-white">Message</label>
+                                <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
+                            </div>
                         </div>
-                        <div class="form-group col-md-6 mb-2">
-                            <label class="text-white" for="">Message</label>
-                            <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
-                        </div>
-                       </div>
                         <div class="text-center">
-                            <button type="submit" class="form_btn rounded">Submit Form</button>
+                            <button type="submit" name="btn" class="form_btn rounded">Submit</button>
                         </div>
                     </form>
+                    
+                    
                 </div>
             </div>
         </div>

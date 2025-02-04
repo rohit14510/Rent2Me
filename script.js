@@ -54,3 +54,19 @@ document.querySelectorAll('.quick-view').forEach(button => {
       enquiryForm.style.display = 'none';
     }
   });
+
+// data form in google sheet
+let url='https://script.google.com/macros/s/AKfycbzgTw9iVoEkmoGtp_B86Cx4ZB6GlPAZC8rO0wQUwkvn_J_GxtRBJeLE5Inc9iz4M-Y7/exec';
+let Form=document.querySelector('#form');
+Form.addEventListener("submit",(e)=>{
+    e.target.btn.innerHTML="Submitting.."
+    let formData=new FormData(Form);
+    fetch(url,{
+        method:"POST",
+        body:formData
+    }).then((res)=>res.text())
+    .then((finalres)=>{
+        e.target.btn.innerHTML="Submit"
+    })
+    e.preventDefault();
+})
