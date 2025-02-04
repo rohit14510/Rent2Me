@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
             "prices": {
                 "3": {"3": 7500, "4": 8500, "5": 9500, "6": 10500, "7": 11500, "8": 11500, "1": 12000},
                 "4": {"3": 8500, "4": 9500, "5": 10500, "6": 11500, "7": 12500, "8": 12500, "1": 13000},
-                "5": {"3": 9900, "4": 10500, "5": 11500, "6": 12500, "7": 13500, "8": 13500, "1": 14000}
+                "5": {"3": 9500, "4": 10500, "5": 11500, "6": 12500, "7": 13500, "8": 13500, "1": 14000}
             },
             "securityDeposit": 2000
         },
@@ -67,21 +67,30 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         "form8": {
             "prices": {
-                "3": {"3": 7, "4": 8000, "5": 9000, "6": 10000, "7": 11000, "8": 11000, "1": 11000},
-                "4": {"3": 8000, "4": 9000, "5": 10000, "6": 11000, "7": 12000, "8": 12000, "1": 12000},
-                "5": {"3": 9000, "4": 10000, "5": 11000, "6": 12000, "7": 13000, "8": 13000, "1": 13000}
+                "3": {"3": 12000, "4": 13000, "5": 14000, "6": 15000, "7": 16000, "8": 17000, "1": 17000},
+                "4": {"3": 13000, "4": 14000, "5": 15000, "6": 16000, "7": 17000, "8": 18000, "1": 18000},
+                "5": {"3": 14000, "4": 15000, "5": 16000, "6": 17000, "7": 18000, "8": 19000, "1": 19000}
             },
             "securityDeposit": 2000
+        },
+        "heater_form1": {
+            "prices": {
+                "7": {"3": 3899, "4": 13000, "5": 14000, "6": 15000, "7": 16000, "8": 17000, "1": 17000},
+                "9": {"3": 3899, "4": 14000, "5": 15000, "6": 16000, "7": 17000, "8": 18000, "1": 18000},
+                "11": {"3": 4899, "4": 15000, "5": 16000, "6": 17000, "7": 18000, "8": 19000, "1": 19000},
+                "13": {"3": 5899, "4": 15000, "5": 16000, "6": 17000, "7": 18000, "8": 19000, "1": 19000}
+            },
+            "securityDeposit": 1000
         }
     };
 
     forms.forEach(form => {
         const modal = form.closest('.modal');
         const formId = modal.getAttribute('data-form') || 'form1';
-        const ratingField = form.querySelector('[name="Rented Product"]');
+        const ratingField = form.querySelector('[name="RentedProduct"]');
         const durationField = form.querySelector('[name="Duration"]');
         const priceField = form.querySelector('[name="Price"]');
-        const totalPriceField = form.querySelector('[name="Total Price"]');
+        const totalPriceField = form.querySelector('[name="TotalPrice"]');
 
         const cardPriceElement = document.querySelector(`.CardPrice[data-form='${formId}']`);
 
@@ -174,18 +183,39 @@ document.querySelectorAll('.quick-view').forEach(button => {
     }
   });
 
-// data form in google sheet
-let url='https://script.google.com/macros/s/AKfycbzgTw9iVoEkmoGtp_B86Cx4ZB6GlPAZC8rO0wQUwkvn_J_GxtRBJeLE5Inc9iz4M-Y7/exec';
-let Form=document.querySelector('#form');
-Form.addEventListener("submit",(e)=>{
-    e.target.btn.innerHTML="Submitting.."
-    let formData=new FormData(Form);
-    fetch(url,{
-        method:"POST",
-        body:formData
-    }).then((res)=>res.text())
-    .then((finalres)=>{
-        e.target.btn.innerHTML="Submit"
-    })
-    e.preventDefault();
-})
+  let url = 'https://script.google.com/macros/s/AKfycbzgTw9iVoEkmoGtp_B86Cx4ZB6GlPAZC8rO0wQUwkvn_J_GxtRBJeLE5Inc9iz4M-Y7/exec';
+
+  // Form IDs ka array banaye
+  let formIds = ['acform1', 'acform2', 'acform3', 'acform4', 'acform5', 'acform6', 'acform7', 'acform8'];
+  
+  // Har form ID ke liye loop lagaye
+  formIds.forEach(formId => {
+      let form = document.getElementById(formId);
+      
+      if (form) { // Check karen ki form exist karta hai ya nahi
+          form.addEventListener('submit', (e) => {
+              e.preventDefault(); // Page reload ko roke
+              let submitBtn = form.querySelector('[name="btn"]');
+              submitBtn.innerHTML = "Submitting...";
+  
+              let formData = new FormData(form);
+              formData.append("formId", formId); // Unique form ID ko bhi bheje
+  
+              fetch(url, {
+                  method: "POST",
+                  body: formData
+              })
+              .then(res => res.text())
+              .then(response => {
+                  submitBtn.innerHTML = "Submit";
+                  alert(`Form  Submitted Successfully!`);
+                  form.reset(); // Form ko reset kare
+              })
+              .catch(error => {
+                  submitBtn.innerHTML = "Submit";
+                  alert("Error: " + error);
+              });
+          });
+      }
+  });
+  
