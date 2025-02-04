@@ -1,0 +1,81 @@
+// Form price Calculate-1
+document.addEventListener('DOMContentLoaded', function () {
+    const productRating = document.getElementById('productRating');
+    const duration = document.getElementById('duration');
+    const priceField = document.getElementById('price');
+    const totalPriceField = document.getElementById('totalPrice');
+    const cardPrice = document.getElementById('cardPrice'); // Get the card price element
+
+    const priceData = {
+        "3": {"3": 6500, "4": 7500, "5": 8500, "6": 9500,"7":10500,"8":10500,"1":10500},
+        "4": {"3": 7500, "4": 8500, "5": 9500, "6": 10500,"7":11500,"8":11500,"1":11500},
+        "5": {"3": 8500, "4": 9500, "5": 10500, "6": 11500,"7":12500,"8":12500,"1":12500}
+    };
+
+    function calculatePrice() {
+        const rating = parseInt(productRating.value);
+        const months = parseInt(duration.value);
+
+        if (priceData[rating] && priceData[rating][months]) {
+            const basePrice = priceData[rating][months];
+            priceField.value = `₹${basePrice}`;
+            totalPriceField.value = `₹${basePrice + 1500}`;
+
+            // Update the card's price display
+            cardPrice.textContent = `₹${basePrice} /Seasonal`;
+        } else {
+            priceField.value = '₹0';
+            totalPriceField.value = '₹0';
+
+            // If there's no valid price, set card price to ₹0
+            cardPrice.textContent = '₹0 /Seasonal';
+        }
+    }
+
+    productRating.addEventListener('change', calculatePrice);
+    duration.addEventListener('change', calculatePrice);
+
+    // Initial calculation on page load
+    calculatePrice();
+});
+
+// Form price Calculate-2
+document.addEventListener('DOMContentLoaded', function () {
+    const productRating2 = document.getElementById('productRating2');
+    const duration2 = document.getElementById('duration2');
+    const priceField2 = document.getElementById('price2');
+    const totalPrice2Field = document.getElementById('totalPrice2');
+    const cardPrice2 = document.getElementById('cardPrice2'); // Get the card price element
+
+    const priceData2 = {
+        "3": {"3": 6500, "4": 7500, "5": 8500, "6": 9500,"7":10500,"8":10500,"1":10500},
+        "4": {"3": 7500, "4": 8500, "5": 9500, "6": 10500,"7":11500,"8":11500,"1":11500},
+        "5": {"3": 8500, "4": 9500, "5": 10500, "6": 11500,"7":12500,"8":12500,"1":12500}
+    };
+
+    function calculatePrice2() {
+        const rating2 = parseInt(productRating2.value);
+        const months2 = parseInt(duration2.value);
+
+        if (priceData2[rating2] && priceData2[rating2][months2]) {
+            const basePrice2 = priceData2[rating2][months2];
+            priceField2.value = `₹${basePrice2}`;
+            totalPrice2Field.value = `₹${basePrice2 + 1500}`;
+
+            // Update the card's price display
+            cardPrice2.textContent = `₹${basePrice2} /Seasonal`;
+        } else {
+            price2Field.value = '₹0';
+            totalPrice2Field.value = '₹0';
+
+            // If there's no valid price, set card price to ₹0
+            cardPrice2.textContent = '₹0 /Seasonal';
+        }
+    }
+
+    productRating2.addEventListener('change', calculatePrice2);
+    duration2.addEventListener('change', calculatePrice2);
+
+    // Initial calculation on page load
+    calculatePrice2();
+});
