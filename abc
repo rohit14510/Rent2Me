@@ -97,3 +97,56 @@ Form.addEventListener("submit",(e)=>{
     })
     e.preventDefault();
 })
+
+
+
+
+<div class="card position-relative p-3 mt-4" id="card1">
+<div class="top-card">
+    <div class="img-container rounded">
+        <!-- Default image -->
+        <img src="assets/windowac-1.jpg" class="card-img-top rounded" alt="Product Image">
+        <!-- Hover image -->
+        <img src="assets/images (1).jpg" class="hover-image" alt="Hover Product Image">
+        <div class="icon-container">
+            <i class="fa-solid fa-heart"></i>
+        </div>
+    </div>
+</div>
+<div class="card-body">
+    <h5 class="card-title">Window AC 0.75 Ton</h5>
+    <table class="table product-card-table">
+        <tbody>
+            <tr>
+                <td class="text-muted">Capacity Available</td>
+                <td class="fw-bold">0.75 Ton</td>
+            </tr>
+            <tr>
+                <td class="text-muted">Type Of Ac Available</td>
+                <td class="fw-bold">Window Ac</td>
+            </tr>
+            <tr>
+                <td class="text-muted">Location</td>
+                <td class="fw-bold">Local</td>
+            </tr>
+            <tr>
+                <td class="text-muted">Service Type</td>
+                <td class="fw-bold">AC Rental Service</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <div class="d-flex justify-content-between m-0 p-0">
+        <p class="card-text text-muted CardPrice" id="cardPrice" data-form="form1">₹1200 /Seasonal</p>
+        <p class="card-text text-muted"><i class="fa-solid fa-truck"></i> 3-5 days
+            <span class="info-container">
+                <i class="fa-solid fa-circle-info info-icon"></i>
+                <span class="info-text">*Subject to profile verification. 90% profiles <br> get
+                    verified within just 24 hours</span>
+            </span>
+        </p>
+    </div>
+    <!-- Book Now Buttons -->
+    <div class="quick-view" data-bs-toggle="modal" data-bs-target="#bookingFormModal1">Book Now</div>
+</div>
+</div>

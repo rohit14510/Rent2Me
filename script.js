@@ -2,367 +2,70 @@ document.querySelector(".menu-icon").addEventListener("click", function () {
   document.querySelector(".nav-links").classList.toggle("active");
 });
 
-// Dynamic Price Calculation
-
+// once again design card
 document.addEventListener("DOMContentLoaded", function () {
-  const forms = document.querySelectorAll(".modal form");
-  const cardPriceElements = document.querySelectorAll(".CardPrice");
+  // Select Elements
+  let cardRating = document.getElementById("rating");
+  let cardCapacity = document.getElementById("capacity");
+  let cardDuration = document.getElementById("duration");
+  let cardPrice = document.getElementById("price"); // Card Price
 
-  const priceData = {
-    form1: {
-      prices: {
-        3: { 3: 6500, 4: 7500, 5: 8500, 6: 9500, 7: 10500, 8: 10500, 1: 10500 },
-        4: {
-          3: 7500,
-          4: 8500,
-          5: 9500,
-          6: 10500,
-          7: 11500,
-          8: 11500,
-          1: 11500,
-        },
-        5: {
-          3: 8500,
-          4: 9500,
-          5: 10500,
-          6: 11500,
-          7: 12500,
-          8: 12500,
-          1: 12500,
-        },
-      },
-      securityDeposit: 1500,
-    },
-    form2: {
-      prices: {
-        3: { 3: 6500, 4: 7500, 5: 8500, 6: 9500, 7: 10500, 8: 10500, 1: 10500 },
-        4: {
-          3: 7500,
-          4: 8500,
-          5: 9500,
-          6: 10500,
-          7: 11500,
-          8: 11500,
-          1: 11500,
-        },
-        5: {
-          3: 8500,
-          4: 9500,
-          5: 10500,
-          6: 11500,
-          7: 12500,
-          8: 12500,
-          1: 12500,
-        },
-      },
-      securityDeposit: 1500,
-    },
-    form3: {
-      prices: {
-        3: { 3: 6500, 4: 7500, 5: 8500, 6: 9500, 7: 10500, 8: 10500, 1: 10500 },
-        4: {
-          3: 7500,
-          4: 8500,
-          5: 9500,
-          6: 10500,
-          7: 11500,
-          8: 11500,
-          1: 11500,
-        },
-        5: {
-          3: 8500,
-          4: 9500,
-          5: 10500,
-          6: 11500,
-          7: 12500,
-          8: 12500,
-          1: 12500,
-        },
-      },
-      securityDeposit: 1500,
-    },
-    form4: {
-      prices: {
-        3: {
-          3: 7500,
-          4: 8500,
-          5: 9500,
-          6: 10500,
-          7: 11500,
-          8: 11500,
-          1: 12000,
-        },
-        4: {
-          3: 8500,
-          4: 9500,
-          5: 10500,
-          6: 11500,
-          7: 12500,
-          8: 12500,
-          1: 13000,
-        },
-        5: {
-          3: 9500,
-          4: 10500,
-          5: 11500,
-          6: 12500,
-          7: 13500,
-          8: 13500,
-          1: 14000,
-        },
-      },
-      securityDeposit: 2000,
-    },
-    form5: {
-      prices: {
-        3: {
-          3: 11000,
-          4: 12000,
-          5: 13000,
-          6: 14000,
-          7: 15000,
-          8: 16000,
-          1: 16000,
-        },
-        4: {
-          3: 12000,
-          4: 13000,
-          5: 14000,
-          6: 15000,
-          7: 16000,
-          8: 17000,
-          1: 17000,
-        },
-        5: {
-          3: 13000,
-          4: 14000,
-          5: 15000,
-          6: 16000,
-          7: 17000,
-          8: 18000,
-          1: 18000,
-        },
-      },
-      securityDeposit: 1500,
-    },
-    form6: {
-      prices: {
-        3: {
-          3: 11000,
-          4: 12000,
-          5: 13000,
-          6: 14000,
-          7: 15000,
-          8: 16000,
-          1: 16000,
-        },
-        4: {
-          3: 12000,
-          4: 13000,
-          5: 14000,
-          6: 15000,
-          7: 16000,
-          8: 17000,
-          1: 17000,
-        },
-        5: {
-          3: 13000,
-          4: 14000,
-          5: 15000,
-          6: 16000,
-          7: 17000,
-          8: 18000,
-          1: 18000,
-        },
-      },
-      securityDeposit: 1500,
-    },
-    form7: {
-      prices: {
-        3: {
-          3: 11000,
-          4: 12000,
-          5: 13000,
-          6: 14000,
-          7: 15000,
-          8: 16000,
-          1: 16000,
-        },
-        4: {
-          3: 12000,
-          4: 13000,
-          5: 14000,
-          6: 15000,
-          7: 16000,
-          8: 17000,
-          1: 17000,
-        },
-        5: {
-          3: 13000,
-          4: 14000,
-          5: 15000,
-          6: 16000,
-          7: 17000,
-          8: 18000,
-          1: 18000,
-        },
-      },
-      securityDeposit: 1500,
-    },
-    form8: {
-      prices: {
-        3: {
-          3: 12000,
-          4: 13000,
-          5: 14000,
-          6: 15000,
-          7: 16000,
-          8: 17000,
-          1: 17000,
-        },
-        4: {
-          3: 13000,
-          4: 14000,
-          5: 15000,
-          6: 16000,
-          7: 17000,
-          8: 18000,
-          1: 18000,
-        },
-        5: {
-          3: 14000,
-          4: 15000,
-          5: 16000,
-          6: 17000,
-          7: 18000,
-          8: 19000,
-          1: 19000,
-        },
-      },
-      securityDeposit: 2000,
-    },
-    heater_form1: {
-      prices: {
-        7: { 1: 3899 },
-        9: { 1: 3899 },
-        11: { 1: 4899 },
-        13: { 1: 5899 },
-      },
-      securityDeposit: 1500,
-    },
-    heater_form2: {
-      prices: {
-        7: { 1: 3899 },
-        9: { 1: 3899 },
-        11: { 1: 4899 },
-        13: { 1: 5899 },
-      },
-      securityDeposit: 1500,
-    },
-    heater_form3: {
-      prices: {
-        7: { 1: 3899 },
-        9: { 1: 3899 },
-        11: { 1: 4899 },
-        13: { 1: 5899 },
-      },
-      securityDeposit: 1500,
-    },
-    heater_form4: {
-      prices: {
-        7: { 1: 3899 },
-        9: { 1: 3899 },
-        11: { 1: 4899 },
-        13: { 1: 5899 },
-      },
-      securityDeposit: 1500,
-    },
-    heater_form5: {
-      prices: {
-        7: { 1: 3899 },
-        9: { 1: 3899 },
-        11: { 1: 4899 },
-        13: { 1: 5899 },
-      },
-      securityDeposit: 1500,
-    },
-    heater_form6: {
-      prices: {
-        7: { 1: 3899 },
-        9: { 1: 3899 },
-        11: { 1: 4899 },
-        13: { 1: 5899 },
-      },
-      securityDeposit: 1500,
-    },
-    Geyser_form1: {
-      prices: {
-        25: { 1: 3800 },
-      },
-      securityDeposit: 1000,
-    },
-    Geyser_form2: {
-      prices: {
-        20: { 1: 3500 },
-      },
-      securityDeposit: 1000,
-    },
-    Geyser_form3: {
-      prices: {
-        15: { 1: 3000 },
-      },
-      securityDeposit: 1000,
-    },
-  };
+  let modalRating = document.getElementById("modal-rating");
+  let modalCapacity = document.getElementById("modal-capacity");
+  let modalDuration = document.getElementById("modal-duration");
+  let modalTotalPrice = document.getElementById("modal-total-price"); // Modal Price
 
-  forms.forEach((form) => {
-    const modal = form.closest(".modal");
-    const formId = modal.getAttribute("data-form") || "form1";
-    const ratingField = form.querySelector('[name="RentedProduct"]');
-    const durationField = form.querySelector('[name="Duration"]');
-    const priceField = form.querySelector('[name="Price"]');
-    const totalPriceField = form.querySelector('[name="TotalPrice"]');
+  function calculatePrice() {
+      let basePrice = 6500;
+      let extraPrice = 0;
 
-    const cardPriceElement = document.querySelector(
-      `.CardPrice[data-form='${formId}']`
-    );
-
-    function calculatePrice() {
-      const rating = parseInt(ratingField.value);
-      const duration = parseInt(durationField.value);
-
-      if (
-        priceData[formId] &&
-        priceData[formId].prices[rating] &&
-        priceData[formId].prices[rating][duration]
-      ) {
-        const basePrice = priceData[formId].prices[rating][duration];
-        const securityDeposit = priceData[formId].securityDeposit;
-
-        priceField.value = `₹${basePrice}`;
-        totalPriceField.value = `₹${basePrice + securityDeposit}`;
-
-        if (cardPriceElement) {
-          cardPriceElement.textContent = `₹${basePrice} /Seasonal`;
-        }
-      } else {
-        priceField.value = "₹0";
-        totalPriceField.value = "₹0";
-
-        if (cardPriceElement) {
-          cardPriceElement.textContent = "₹0 /Seasonal";
-        }
+      // Rating Based Price
+      if (cardRating.value == "4") {
+          basePrice = 7000;
+      } else if (cardRating.value == "5") {
+          basePrice = 7500;
       }
-    }
 
-    ratingField.addEventListener("change", calculatePrice);
-    durationField.addEventListener("change", calculatePrice);
+      // Capacity Based Price
+      if (cardCapacity.value == "2ton") {
+          extraPrice += 2000;
+      } else if (cardCapacity.value == "3ton") {
+          extraPrice += 4000;
+      }
 
-    modal.addEventListener("shown.bs.modal", calculatePrice);
+      // Duration Based Price
+      if (cardDuration.value == "4") {
+          extraPrice += 1000;
+      } else if (cardDuration.value == "5") {
+          extraPrice += 2000;
+      }
 
-    calculatePrice();
-  });
+      // Final Price
+      let finalPrice = basePrice + extraPrice;
+      cardPrice.innerText = `₹${finalPrice}`;
+
+      // Update Modal Price (with Security Deposit)
+      let totalPrice = finalPrice + 2000;
+      modalTotalPrice.innerText = `₹${totalPrice}`;
+  }
+
+  // Card dropdowns change hone par price update ho
+  cardRating.addEventListener("change", calculatePrice);
+  cardCapacity.addEventListener("change", calculatePrice);
+  cardDuration.addEventListener("change", calculatePrice);
+
+  // Modal Open hone par values copy ho
+  function updateModalValues() {
+      modalRating.value = cardRating.value;
+      modalCapacity.value = cardCapacity.value;
+      modalDuration.value = cardDuration.value;
+      calculatePrice(); // Modal price update kare
+  }
+
+  document.querySelector("[data-bs-target='#bookingFormModal1']").addEventListener("click", updateModalValues);
 });
+
+
 
 // Splide Slider
 document.addEventListener("DOMContentLoaded", function () {
