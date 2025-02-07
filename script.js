@@ -27,9 +27,9 @@ document.addEventListener("DOMContentLoaded", function () {
       }
 
       // Capacity Based Price
-      if (cardCapacity.value == "2ton") {
+      if (cardCapacity.value == "3ton") {
           extraPrice += 2000;
-      } else if (cardCapacity.value == "3ton") {
+      } else if (cardCapacity.value == "2ton") {
           extraPrice += 4000;
       }
 

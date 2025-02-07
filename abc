@@ -150,3 +150,44 @@ Form.addEventListener("submit",(e)=>{
     <div class="quick-view" data-bs-toggle="modal" data-bs-target="#bookingFormModal1">Book Now</div>
 </div>
 </div>
+
+
+
+<div class="modal fade" id="bookingFormModal1" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Booking Form</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <label>Rating:</label>
+                <select id="modal-rating" class="form-select" disabled>
+                    <option value="3">3 Star</option>
+                    <option value="4">4 Star</option>
+                    <option value="5">5 Star</option>
+                </select>
+
+                <label>Capacity:</label>
+                <select id="modal-capacity" class="form-select" disabled>
+                    <option value="1ton">1 Ton</option>
+                    <option value="2ton">2 Ton</option>
+                    <option value="3ton">3 Ton</option>
+                </select>
+
+                <label>Duration:</label>
+                <select id="modal-duration" class="form-select" disabled>
+                    <option value="3">3 Months</option>
+                    <option value="4">4 Months</option>
+                    <option value="5">5 Months</option>
+                </select>
+
+                <!-- Total Price Section -->
+                <label class="fw-bold mt-3">Total Price:</label>
+                <p class="fs-4 text-danger fw-bold">
+                    <span id="modal-total-price">₹8500</span> <!-- JavaScript yahan update karega -->
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
