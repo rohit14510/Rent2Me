@@ -81,39 +81,40 @@
                     stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
             </svg>
         </a>
-       
+
     </div>
-<!-- ---------------Enq--------------- -->
-<button id="complaintBtn">Raise Complaint</button>
+    <!-- ---------------Enq--------------- -->
+    <button id="complaintBtn">Raise Complaint</button>
 
-<div id="enquiryForm">
-  <h3>Enquiry Form</h3>
-  <label for="">Name</label>
-  <input type="text" placeholder="Your Name" required>
-  <label for="">Email</label>
-  <input type="email" placeholder="Your Email" required>
-  <label for="">Complaint</label>
-  <textarea placeholder="Your Complaint" rows="4" required></textarea>
-  <button type="submit">Submit</button>
-</div>
-        <!-- --------------------START HERO - SECTION---------------------- -->
-        <div class="conatiner-fluid">
-            <div class="row service_Section">
-                <div class="service_Section_overlay ">
-                    <div class="service_Section_content">
-                        <h2>Geyser on Rent</h2>
-                        <p class="text-center text-white fw-bold"><span class="fs-5 ">Home </span><i class="fa-solid fa-angles-right"></i> <span class=" fs-5">Geyser on Rent</span></p>
-         
-                    </div>
+    <div id="enquiryForm">
+        <h3>Enquiry Form</h3>
+        <label for="">Name</label>
+        <input type="text" placeholder="Your Name" required>
+        <label for="">Email</label>
+        <input type="email" placeholder="Your Email" required>
+        <label for="">Complaint</label>
+        <textarea placeholder="Your Complaint" rows="4" required></textarea>
+        <button type="submit">Submit</button>
+    </div>
+    <!-- --------------------START HERO - SECTION---------------------- -->
+    <div class="conatiner-fluid">
+        <div class="row service_Section">
+            <div class="service_Section_overlay ">
+                <div class="service_Section_content">
+                    <h2>Geyser on Rent</h2>
+                    <p class="text-center text-white fw-bold"><span class="fs-5 ">Home </span><i
+                            class="fa-solid fa-angles-right"></i> <span class=" fs-5">Geyser on Rent</span></p>
+
                 </div>
-                <img class="p-0" src="assets/hero.jpg" width="100%" alt="Service Background">
             </div>
-    
+            <img class="p-0" src="assets/hero.jpg" width="100%" alt="Service Background">
         </div>
-      
-        <!-- -----------------------End Hero Section-------------------------- -->
 
-   <!-- -----------------------Start All Ac ---------------------------- -->
+    </div>
+
+    <!-- -----------------------End Hero Section-------------------------- -->
+
+    <!-- -----------------------Start All Ac ---------------------------- -->
     <div class="container-fluid p-4">
         <div class="row">
             <div class="text-center">
@@ -122,629 +123,357 @@
         </div>
         <div class="row">
             <div class="col-lg-4">
-                <div class="card position-relative p-3 mt-4">
+                <div class="card position-relative p-3 mt-4" id="card1">
                     <div class="top-card">
                         <div class="img-container rounded">
-                            <!-- Default image -->
                             <img src="assets/gyser-1.jpg" class="card-img-top rounded" alt="Product Image">
-                            <!-- Hover image -->
-                            <img src="assets/gyser4.jpg" class="hover-image" alt="Hover Product Image">
+                            <img src="assets/gyser-1.jpg" class="hover-image" alt="Hover Product Image">
                             <div class="icon-container">
                                 <i class="fa-solid fa-heart"></i>
                             </div>
                         </div>
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">Geyser 25L</h5>
-                        <table class="table product-card-table">
-                            <thead>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="text-muted">Size</td>
-                                    <td class="fw-bold">25 L</td>
-                                </tr>
-                                <tr>
-                                    <td class="text-muted">Type</td>
-                                    <td class="fw-bold">Automatic</td>
-                                </tr>
-                                <tr>
-                                    <td class="text-muted">Volt. / Freq.(V/Hz) </td>
-                                    <td class="fw-bold"> 230/50</td>
-                                </tr>
-                                <tr>
-                                    <td class="text-muted">Temperature (°C)</td>
-                                    <td class="fw-bold">25-75</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <hr>
-                        <div class="d-flex justify-content-between m-0 p-0">
-                            <p class="card-text text-muted CardPrice "data-form="Geyser_form1">₹2000 /Seasonal</p>
-                            <p class="card-text text-muted"><i class="fa-solid fa-truck"></i> 3-5 days
-                                <span class="info-container">
-                                    <i class="fa-solid fa-circle-info info-icon"></i>
-                                    <span class="info-text">*Subject to profile verification. 90% profiles <br> get
-                                        verified within just 24 hours</span>
-                                </span>
-                            </p>
+                        <h5 class="card-title">Geyser</h5>
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <!-- Product Rating -->
+                                <div class="product-rating">
+                                    <label class="mb-1" for="capacity">Capacity:</label>
+                                    <select id="capacity" class="form-select">
+                                        <option value="15L">15 L</option>
+                                        <option value="20L">20 L</option>
+                                        <option value="25L">25 L</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <!-- Duration Selection -->
+                                <div class="product-duration">
+                                    <label class="mb-1" for="duration">Duration:</label>
+                                    <select id="duration" class="form-select">
+                                        <option value="3">3 Months</option>
+                                        <option value="4">4 Months</option>
+                                        <option value="5">5 Months</option>
+                                        <option value="6">6 Months</option>
+                                        <option value="7">7 Months</option>
+                                        <option value="8">8 Months</option>
+                                        <option value="9">Annually</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <!-- Price Display -->
+                                <div class="product-price mt-3">
+                                    <label for="price">Price:</label>
+                                    <div>
+                                        <span id="price" class="price-display fw-bold text-danger fs-4">₹6500</span>
+                                    </div>
+                                    <div id="payment-info">
+                                        <small>Payment on Advance
+                                            Security Deposit ₹1000</small>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                          <!-- Book Now Buttons -->
-                      <div class="quick-view" data-bs-toggle="modal" data-bs-target="#bookingFormModal1">Book Now</div>
-
+                
+                        <div class="quick-view mt-3" data-bs-toggle="modal" data-bs-target="#bookingFormModal3">Book Now</div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4">
-                <div class="card position-relative p-3 mt-4">
-                    <div class="top-card">
-                        <div class="img-container rounded">
-                            <!-- Default image -->
-                            <img src="assets/g-1.jpg" class="card-img-top rounded" alt="Product Image">
-                            <!-- Hover image -->
-                            <img src="assets/Geyser3.jpg" class="hover-image" alt="Hover Product Image">
-                            <div class="icon-container">
-                                <i class="fa-solid fa-heart"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Geyser 20L</h5>
-                        <table class="table product-card-table">
-                            <thead>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="text-muted">Size</td>
-                                    <td class="fw-bold">20 L</td>
-                                </tr>
-                                <tr>
-                                    <td class="text-muted">Type</td>
-                                    <td class="fw-bold">Automatic</td>
-                                </tr>
-                                <tr>
-                                    <td class="text-muted">Volt. / Freq.(V/Hz) </td>
-                                    <td class="fw-bold"> 230/50</td>
-                                </tr>
-                                <tr>
-                                    <td class="text-muted">Temperature (°C)</td>
-                                    <td class="fw-bold">25-75</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <hr>
-                        <div class="d-flex justify-content-between m-0 p-0">
-                            <p class="card-text text-muted CardPrice "data-form="Geyser_form2">₹1200 /Seasonal</p>
-                            <p class="card-text text-muted"><i class="fa-solid fa-truck"></i> 3-5 days
-                                <span class="info-container">
-                                    <i class="fa-solid fa-circle-info info-icon"></i>
-                                    <span class="info-text">*Subject to profile verification. 90% profiles <br> get
-                                        verified within just 24 hours</span>
-                                </span>
-                            </p>
-                        </div>
-                          <!-- Book Now Buttons -->
-                      <div class="quick-view" data-bs-toggle="modal" data-bs-target="#bookingFormModal2">Book Now</div>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="card position-relative p-3 mt-4">
-                    <div class="top-card">
-                        <div class="img-container rounded">
-                            <!-- Default image -->
-                            <img src="assets/gyser-1.jpg" class="card-img-top rounded" alt="Product Image">
-                            <!-- Hover image -->
-                            <img src="assets/Geyser2.jpg" class="hover-image" alt="Hover Product Image">
-                            <div class="icon-container">
-                                <i class="fa-solid fa-heart"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Geyser 15L</h5>
-                        <table class="table product-card-table">
-                            <thead>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="text-muted">Size</td>
-                                    <td class="fw-bold">15 L</td>
-                                </tr>
-                                <tr>
-                                    <td class="text-muted">Type</td>
-                                    <td class="fw-bold">Automatic</td>
-                                </tr>
-                                <tr>
-                                    <td class="text-muted">Volt. / Freq.(V/Hz) </td>
-                                    <td class="fw-bold"> 230/50</td>
-                                </tr>
-                                <tr>
-                                    <td class="text-muted">Temperature (°C)</td>
-                                    <td class="fw-bold">25-75</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <hr>
-                        <div class="d-flex justify-content-between m-0 p-0">
-                            <p class="card-text text-muted CardPrice "data-form="Geyser_form3">₹1600 /Seasonal</p>
-                            <p class="card-text text-muted"><i class="fa-solid fa-truck"></i> 3-5 days
-                                <span class="info-container">
-                                    <i class="fa-solid fa-circle-info info-icon"></i>
-                                    <span class="info-text">*Subject to profile verification. 90% profiles <br> get
-                                        verified within just 24 hours</span>
-                                </span>
-                            </p>
-                        </div>
-                          <!-- Book Now Buttons -->
-                      <div class="quick-view" data-bs-toggle="modal" data-bs-target="#bookingFormModal3">Book Now</div>
-
-                    </div>
-                </div>
-            </div>    
         </div>
     </div>
-     <!-- -----------------------End All Acr---------------------------- -->
-   <!-- Modal Structure card-1 -->
-   <div class="modal fade" id="bookingFormModal1" data-form="Geyser_form1" tabindex="-1"
-   aria-labelledby="bookingFormModalLabel" aria-hidden="true">
-   <div class="modal-dialog modal-dialog-centered modal-lg">
-       <div class="modal-content">
-           <div class="modal-header">
-               <h5 class="modal-title text-uppercase fw-bold" id="bookingFormModalLabel">Enquiry Now</h5>
-               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-           </div>
-           <div class="modal-body">
-               <!-- Form Content -->
-               <form id="gesform1">
-                   <input type="hidden" name="access_key" value="">
-                   <div class="row">
-                       <div class="form-group col-md-6 mb-2">
-                           <label class="text-dark" for="">Name</label>
-                           <input type="text" name="name" class="form-control" placeholder="Your Name">
-                       </div>
-                       <div class="form-group col-md-6 mb-2">
-                           <label class="text-dark" for="">Email</label>
-                           <input type="email" name="email" class="form-control" placeholder="Enter Email">
-                       </div>
-                   </div>
-
-                   <div class="row">
-                       <div class="form-group col-md-6 mb-2">
-                           <label class="text-dark">Phone Number</label>
-                           <input type="text" name="phone" class="form-control" placeholder="Phone Number"
-                               required>
-                       </div>
-                       <div class="form-group col-md-6 mb-2">
-                           <label class="text-dark">WhatsApp Number</label>
-                           <input type="text" name="whatsapp" class="form-control" placeholder="WhatsApp Number"
-                               required>
-                       </div>
-                   </div>
-
-                   <div class="row">
-                       <div class="form-group col-md-6 mb-2">
-                           <label class="text-dark" for="productRating">Product Variants</label>
-                           <select class="form-control" name="RentedProduct" id="productRating">
-                               <option value="25" selected>25L</option>
-                               
-                           </select>
-                       </div>
-
-                       <div class="form-group col-md-6 mb-2">
-                           <label class="text-dark" for="duration">Duration</label>
-                           <select class="form-control" name="Duration" id="duration">
-                               <option value="1">Full Season (Till Mar End)</option>
-                           </select>
-                       </div>
-                   </div>
-
-                   <!-- Price Section -->
-                   <div class="row">
-                       <div class="form-group col-md-6 mb-2">
-                           <label class="text-dark" for="price">Price (in ₹)</label>
-                           <input type="text" name="Price" id="price2" class="form-control" readonly value="₹0">
-                       </div>
-                       <div class="form-group col-md-6 mb-2">
-                           <label class="text-dark" for="totalPrice">Total Price (in ₹) <span
-                                   class="fw-bold text-danger">Security Deposit ₹1000 extra</span></label>
-                           <input type="text" name="TotalPrice" id="totalPrice2" class="form-control" readonly
-                               value="₹0">
-                       </div>
-                   </div>
-
-
-                   <div class="row">
-                       <div class="form-group col-md-6 mb-2">
-                           <label class="text-dark" for="">Address</label>
-                           <textarea name="Address" rows="3" class="form-control"
-                               placeholder="Your Address"></textarea>
-                       </div>
-                       <div class="form-group col-md-6 mb-2">
-                           <label class="text-dark" for="">Message</label>
-                           <textarea class="form-control" name="message" rows="3" placeholder="Message"></textarea>
-                       </div>
-                   </div>
-
-                   <div class="text-center">
-                       <button type="submit" name="btn" class="form_btn rounded">Submit</button>
-                   </div>
-               </form>
-           </div>
-       </div>
-   </div>
-</div>
- <!-- Modal Structure card-2 -->
-<div class="modal fade" id="bookingFormModal2" data-form="Geyser_form2" tabindex="-1"
-   aria-labelledby="bookingFormModalLabel" aria-hidden="true">
-   <div class="modal-dialog modal-dialog-centered modal-lg">
-       <div class="modal-content">
-           <div class="modal-header">
-               <h5 class="modal-title text-uppercase fw-bold" id="bookingFormModalLabel">Enquiry Now</h5>
-               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-           </div>
-           <div class="modal-body">
-               <!-- Form Content -->
-               <form id="gesform2">
-                   <input type="hidden" name="access_key" value="">
-                   <div class="row">
-                       <div class="form-group col-md-6 mb-2">
-                           <label class="text-dark" for="">Name</label>
-                           <input type="text" name="name" class="form-control" placeholder="Your Name">
-                       </div>
-                       <div class="form-group col-md-6 mb-2">
-                           <label class="text-dark" for="">Email</label>
-                           <input type="email" name="email" class="form-control" placeholder="Enter Email">
-                       </div>
-                   </div>
-
-                   <div class="row">
-                       <div class="form-group col-md-6 mb-2">
-                           <label class="text-dark">Phone Number</label>
-                           <input type="text" name="phone" class="form-control" placeholder="Phone Number"
-                               required>
-                       </div>
-                       <div class="form-group col-md-6 mb-2">
-                           <label class="text-dark">WhatsApp Number</label>
-                           <input type="text" name="whatsapp" class="form-control" placeholder="WhatsApp Number"
-                               required>
-                       </div>
-                   </div>
-
-                   <div class="row">
-                       <div class="form-group col-md-6 mb-2">
-                           <label class="text-dark" for="productRating">Product Variants</label>
-                           <select class="form-control" name="RentedProduct" id="productRating">
-                               <option value="20" selected>20L</option>
-                               
-                           </select>
-                       </div>
-
-                       <div class="form-group col-md-6 mb-2">
-                           <label class="text-dark" for="duration">Duration</label>
-                           <select class="form-control" name="Duration" id="duration">
-                               <option value="1">Full Season (Till Mar End)</option>
-                           </select>
-                       </div>
-                   </div>
-
-                   <!-- Price Section -->
-                   <div class="row">
-                       <div class="form-group col-md-6 mb-2">
-                           <label class="text-dark" for="price">Price (in ₹)</label>
-                           <input type="text" name="Price" id="price2" class="form-control" readonly value="₹0">
-                       </div>
-                       <div class="form-group col-md-6 mb-2">
-                           <label class="text-dark" for="totalPrice">Total Price (in ₹) <span
-                                   class="fw-bold text-danger">Security Deposit ₹1000 extra</span></label>
-                           <input type="text" name="TotalPrice" id="totalPrice2" class="form-control" readonly
-                               value="₹0">
-                       </div>
-                   </div>
-
-
-                   <div class="row">
-                       <div class="form-group col-md-6 mb-2">
-                           <label class="text-dark" for="">Address</label>
-                           <textarea name="Address" rows="3" class="form-control"
-                               placeholder="Your Address"></textarea>
-                       </div>
-                       <div class="form-group col-md-6 mb-2">
-                           <label class="text-dark" for="">Message</label>
-                           <textarea class="form-control" name="message" rows="3" placeholder="Message"></textarea>
-                       </div>
-                   </div>
-
-                   <div class="text-center">
-                       <button type="submit"  name="btn" class="form_btn rounded">Submit</button>
-                   </div>
-               </form>
-           </div>
-       </div>
-   </div>
-</div>
- <!-- Modal Structure card-3 -->
-<div class="modal fade" id="bookingFormModal3" data-form="Geyser_form3" tabindex="-1"
-   aria-labelledby="bookingFormModalLabel" aria-hidden="true">
-   <div class="modal-dialog modal-dialog-centered modal-lg">
-       <div class="modal-content">
-           <div class="modal-header">
-               <h5 class="modal-title text-uppercase fw-bold" id="bookingFormModalLabel">Enquiry Now</h5>
-               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-           </div>
-           <div class="modal-body">
-               <!-- Form Content -->
-               <form id="gesform3">
-                   <input type="hidden" name="access_key" value="">
-                   <div class="row">
-                       <div class="form-group col-md-6 mb-2">
-                           <label class="text-dark" for="">Name</label>
-                           <input type="text" name="name" class="form-control" placeholder="Your Name">
-                       </div>
-                       <div class="form-group col-md-6 mb-2">
-                           <label class="text-dark" for="">Email</label>
-                           <input type="email" name="email" class="form-control" placeholder="Enter Email">
-                       </div>
-                   </div>
-
-                   <div class="row">
-                       <div class="form-group col-md-6 mb-2">
-                           <label class="text-dark">Phone Number</label>
-                           <input type="text" name="phone" class="form-control" placeholder="Phone Number"
-                               required>
-                       </div>
-                       <div class="form-group col-md-6 mb-2">
-                           <label class="text-dark">WhatsApp Number</label>
-                           <input type="text" name="whatsapp" class="form-control" placeholder="WhatsApp Number"
-                               required>
-                       </div>
-                   </div>
-
-                   <div class="row">
-                       <div class="form-group col-md-6 mb-2">
-                           <label class="text-dark" for="productRating">Product Variants</label>
-                           <select class="form-control" name="RentedProduct" id="productRating">
-                               <option value="15" selected>15L</option>
-                              
-                           </select>
-                       </div>
-
-                       <div class="form-group col-md-6 mb-2">
-                           <label class="text-dark" for="duration">Duration</label>
-                           <select class="form-control" name="Duration" id="duration">
-                               <option value="1">Full Season (Till Mar End)</option>
-                           </select>
-                       </div>
-                   </div>
-
-                   <!-- Price Section -->
-                   <div class="row">
-                       <div class="form-group col-md-6 mb-2">
-                           <label class="text-dark" for="price">Price (in ₹)</label>
-                           <input type="text" name="Price" id="price2" class="form-control" readonly value="₹0">
-                       </div>
-                       <div class="form-group col-md-6 mb-2">
-                           <label class="text-dark" for="totalPrice">Total Price (in ₹) <span
-                                   class="fw-bold text-danger">Security Deposit ₹1000 extra</span></label>
-                           <input type="text" name="TotalPrice" id="totalPrice2" class="form-control" readonly
-                               value="₹0">
-                       </div>
-                   </div>
-
-
-                   <div class="row">
-                       <div class="form-group col-md-6 mb-2">
-                           <label class="text-dark" for="">Address</label>
-                           <textarea name="Address" rows="3" class="form-control"
-                               placeholder="Your Address"></textarea>
-                       </div>
-                       <div class="form-group col-md-6 mb-2">
-                           <label class="text-dark" for="">Message</label>
-                           <textarea class="form-control" name="message" rows="3" placeholder="Message"></textarea>
-                       </div>
-                   </div>
-
-                   <div class="text-center">
-                       <button type="submit" name="btn" class="form_btn rounded">Submit</button>
-                   </div>
-               </form>
-           </div>
-       </div>
-   </div>
-</div>
-   <!-- -----------------------Start Terms Condition---------------------------- -->
- <div class="container-fluid p-4">
-    <div class="row">
-        <div class="col-lg-3 mt-4">
-            <div class="product-card">
-                <div class="about-icon mb-3">
-                    <i class="fa-solid fa-boxes-stacked fs-1 Sub-topic"></i>
+    <!-- -----------------------End All Acr---------------------------- -->
+    <!-- Modal Structure card-1 Window AC-->
+    <div class="modal fade" id="bookingFormModal3" data-form="form3" tabindex="-1"
+        aria-labelledby="bookingFormModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-uppercase fw-bold" id="bookingFormModalLabel">Enquiry Now</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <h6 class="text-center ">Products as good as new</h6>
-            </div>
-        </div>
-        <div class="col-lg-3 mt-4">
-            <div class="product-card">
-                <div class="about-icon mb-3">
-                    <i class="fa-solid fa-wrench fs-1 Sub-topic"></i>
-                </div>
-                <h6 class=" text-center ">Free repairs & maintenance</h6>
-            </div>
-        </div>
-        <div class="col-lg-3 mt-4">
-            <div class="product-card">
-                <div class="about-icon mb-3">
-                    <i class="fa-solid fa-truck fs-1 Sub-topic"></i>
-                </div>
-                <h6 class=" text-center  ">Free upgrades & relocation</h6>
-            </div>
-        </div>
-        <div class="col-lg-3 mt-4">
-            <div class="product-card">
-                <div class="about-icon mb-3">
-                    <i class="fa-solid fa-headset fs-1 Sub-topic"></i>
-                </div>
-                <h6 class=" text-center  ">Easy Returns,24/7 Support</h6>
-            </div>
-        </div>
-      </div>
- </div>
- <!-- -----------------------End Terms Condition---------------------------- -->
-         <!-- ---------------------------------------------------------Start  Branch Section------------------------------------------ -->
-         <div class="container-fluid p-4" style="background-color: #00194D;">
-            <div class="row">
-                <h3 class="text-uppercase fw-bold text-white text-center"> our Areas</h3>
-        
-            </div>
-            <div class="row text-white mt-4 ">
-                <h4 class=" fw-bold text-center mb-4 text-white text-lg-start"> Geysers On Rent in Gurgaon Localities</h4>
-                <div class="col-lg-3">
-                    <ul class="list-unstyled">
-                        <li>
-                            <a class="text-white" style="text-decoration: none;"> Geysers On Rent in Gurgaon</a>
-                            <hr>
-                        </li>
-                        <li>
-                            <a class="text-white" style="text-decoration: none;">Geysers On Rent in Gurgaon Sector 56
-    
-    
-    
-                            </a>
-                            <hr>
-                        </li>
-                        <li>
-                            <a class="text-white" style="text-decoration: none;">Geysers On Rent in Palam Vihar</a>
-                            <hr>
-                        </li>
-                        <li>
-                            <a class="text-white" style="text-decoration: none;">Geysers On Rent in DLF City Phase 3
-    
-                            </a>
-                            <hr>
-                        </li>
+                <div class="modal-body">
+                    <!-- Form Content -->
+                    <form id="gesform1">
+                        <input type="hidden" name="access_key" value="">
+
+                        <div class="row">
+                            <div class="form-group col-md-4 col-6 mb-2">
+                                <label class="text-dark" for="">Name</label>
+                                <input type="text" name="name" class="form-control" placeholder="Your Name">
+                            </div>
+                            <div class="form-group col-md-4 col-6 mb-2">
+                                <label class="text-dark" for="">Email</label>
+                                <input type="email" name="email" class="form-control" placeholder="Enter Email">
+                            </div>
+                            <div class="form-group col-md-4 col-6 mb-2">
+                                <label class="text-dark">Phone Number</label>
+                                <input type="text" name="phone" class="form-control" placeholder="Phone Number"
+                                    required>
+                            </div>
+                            <div class="form-group col-md-4 col-6 mb-2">
+                                <label class="text-dark">WhatsApp Number</label>
+                                <input type="text" name="whatsapp" class="form-control" placeholder="WhatsApp Number"
+                                    required>
+                            </div>
+                            <div class="form-group col-md-4 mb-2">
+                                <label class="text-dark" for="">Address</label>
+                                <textarea name="Address" rows="3" class="form-control"
+                                    placeholder="Your Address"></textarea>
+                            </div>
+                            <div class="form-group col-md-4 mb-2">
+                                <label class="text-dark" for="">Message</label>
+                                <textarea class="form-control" name="message" rows="3" placeholder="Message"></textarea>
+                            </div>
+
+                            <!-- Product Name -->
+                            <div class="form-group col-md-3 col-6 mb-2">
+                                <label class="text-dark">Product Name</label>
+                                <p class="fs-5 text-primary fw-bold" id="modal-product-name"></p>
+                                <input type="hidden" name="product_name" id="modal-product-name-input">
+                                <!-- Hidden Input -->
+                            </div>
+
+                            <!-- Rating -->
+                            <div class="form-group col-md-3 col-6 mb-2">
+                                <label class="text-dark">Capacity:</label>
+                                <select name="capacity" id="modal-rating" class="form-select">
+                                    <option value="15L">15 L</option>
+                                    <option value="20L">20 L</option>
+                                    <option value="25L">25 L</option>
+                                </select>
+                            </div>
+
+                            <!-- Duration -->
+                            <div class="form-group col-md-3 col-6 mb-2">
+                                <label class="text-dark">Duration</label>
+                                <select id="modal-duration" name="duration" class="form-select">
+                                    <option value="3">3 Months</option>
+                                    <option value="4">4 Months</option>
+                                    <option value="5">5 Months</option>
+                                    <option value="6">6 Months</option>
+                                    <option value="7">7 Months</option>
+                                    <option value="8">8 Months</option>
+                                    <option value="9">Annually</option>
+                                </select>
+                            </div>
+
                       
-    
-    
-    
-    
-    
-                    </ul>
+                            <!-- Total Price -->
+                            <div class="form-group col-md-3 col-6 mb-2">
+                                <label class="fw-bold mt-3 text-dark">Total Price:
+                                    <span class="fw-bold text-danger">Security Deposit ₹1000 extra</span>
+                                </label>
+                                <p class="fs-4 text-danger fw-bold">
+                                    <span id="modal-total-price">₹8500</span> <!-- Displayed Price -->
+                                </p>
+                                <input type="hidden" name="price" id="modal-total-price-input">
+                                <!-- Hidden Input for Form -->
+                            </div>
+                        </div>
+
+                        <div class="text-center">
+                            <button type="submit" name="btn" class="form_btn rounded">Submit</button>
+                        </div>
+                    </form>
                 </div>
-                <div class="col-lg-3">
-                    <ul class="list-unstyled">
-                        <li>
-                            <a class="text-white" style="text-decoration: none;">
-                                Geysers On Rent in Gurgaon</a>
-                            <hr>
-                        </li>
-                        <li>
-                            <a class="text-white" style="text-decoration: none;">Geysers On Rent in Manesar
-    
-                            </a>
-                            <hr>
-                        </li>
-                        <li>
-                            <a class="text-white" style="text-decoration: none;">Geysers On Rent in Sikandarpur Gurgaon
-    
-                            </a>
-                            <hr>
-                        </li>
-                        <li>
-                            <a class="text-white" style="text-decoration: none;">Geysers On Rent in Gurgaon Sector 29</a>
-                            <hr>
-                        </li>
-                       
-    
-    
-    
-    
-                    </ul>
-                </div>
-                <div class="col-lg-3">
-                    <ul class="list-unstyled">
-                        <li>
-                            <a class="text-white" style="text-decoration: none;">
-                                Geysers On Rent in Gurgaon Sector 14
-    
-                            </a>
-                            <hr>
-                        </li>
-                        <li>
-                            <a class="text-white" style="text-decoration: none;">
-                                Geysers On Rent in Sadar Bazar Gurgaon
-    
-                            </a>
-                            <hr>
-                        </li>
-                        <li>
-                            <a class="text-white" style="text-decoration: none;">
-                                Geysers On Rent in Udyog Vihar Gurgaon
-    
-    
-    
-                            </a>
-                            <hr>
-                        </li>
-                        <li>
-                            <a class="text-white" style="text-decoration: none;">Geysers On Rent in Mg Road Gurgaon</a>
-                            <hr>
-                        </li>
-                    
-    
-    
-    
-                    </ul>
-                </div>
-                <div class="col-lg-3">
-                    <ul class="list-unstyled">
-                        <li>
-                            <a class="text-white" style="text-decoration: none;">
-                                Geysers On Rent in IMT Manesar
-    
-                            </a>
-                            <hr>
-                        </li>
-                        <li>
-                            <a class="text-white" style="text-decoration: none;">
-                                Geysers On Rent in Model Town Gurgaon
-    
-                            </a>
-                            <hr>
-                        </li>
-                        <li>
-                            <a class="text-white" style="text-decoration: none;">
-                                Geysers On Rent in Gurgaon Sector 44
-    
-    
-    
-                            </a>
-                            <hr>
-                        </li>
-                        <li>
-                            <a class="text-white" style="text-decoration: none;">Geysers On Rent in Gurgaon Sector 49</a>
-                            <hr>
-                        </li>
-            
-    
-    
-    
-                    </ul>
-                </div>
-          
-    
-    
             </div>
         </div>
-        
-            <!-- ---------------------------------------------------------End  Branch Section------------------------------------------ -->
-        
-  <!-- -----------------Start Poster ---------------------------- -->
+    </div>
+
+    <!-- -----------------------Start Terms Condition---------------------------- -->
+    <div class="container-fluid p-4">
+        <div class="row">
+            <div class="col-lg-3 mt-4">
+                <div class="product-card">
+                    <div class="about-icon mb-3">
+                        <i class="fa-solid fa-boxes-stacked fs-1 Sub-topic"></i>
+                    </div>
+                    <h6 class="text-center ">Products as good as new</h6>
+                </div>
+            </div>
+            <div class="col-lg-3 mt-4">
+                <div class="product-card">
+                    <div class="about-icon mb-3">
+                        <i class="fa-solid fa-wrench fs-1 Sub-topic"></i>
+                    </div>
+                    <h6 class=" text-center ">Free repairs & maintenance</h6>
+                </div>
+            </div>
+            <div class="col-lg-3 mt-4">
+                <div class="product-card">
+                    <div class="about-icon mb-3">
+                        <i class="fa-solid fa-truck fs-1 Sub-topic"></i>
+                    </div>
+                    <h6 class=" text-center  ">Free upgrades & relocation</h6>
+                </div>
+            </div>
+            <div class="col-lg-3 mt-4">
+                <div class="product-card">
+                    <div class="about-icon mb-3">
+                        <i class="fa-solid fa-headset fs-1 Sub-topic"></i>
+                    </div>
+                    <h6 class=" text-center  ">Easy Returns,24/7 Support</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------------End Terms Condition---------------------------- -->
+    <!-- ---------------------------------------------------------Start  Branch Section------------------------------------------ -->
+    <div class="container-fluid p-4" style="background-color: #00194D;">
+        <div class="row">
+            <h3 class="text-uppercase fw-bold text-white text-center"> our Areas</h3>
+
+        </div>
+        <div class="row text-white mt-4 ">
+            <h4 class=" fw-bold text-center mb-4 text-white text-lg-start"> Geysers On Rent in Gurgaon Localities</h4>
+            <div class="col-lg-3">
+                <ul class="list-unstyled">
+                    <li>
+                        <a class="text-white" style="text-decoration: none;"> Geysers On Rent in Gurgaon</a>
+                        <hr>
+                    </li>
+                    <li>
+                        <a class="text-white" style="text-decoration: none;">Geysers On Rent in Gurgaon Sector 56
+
+
+
+                        </a>
+                        <hr>
+                    </li>
+                    <li>
+                        <a class="text-white" style="text-decoration: none;">Geysers On Rent in Palam Vihar</a>
+                        <hr>
+                    </li>
+                    <li>
+                        <a class="text-white" style="text-decoration: none;">Geysers On Rent in DLF City Phase 3
+
+                        </a>
+                        <hr>
+                    </li>
+
+
+
+
+
+
+                </ul>
+            </div>
+            <div class="col-lg-3">
+                <ul class="list-unstyled">
+                    <li>
+                        <a class="text-white" style="text-decoration: none;">
+                            Geysers On Rent in Gurgaon</a>
+                        <hr>
+                    </li>
+                    <li>
+                        <a class="text-white" style="text-decoration: none;">Geysers On Rent in Manesar
+
+                        </a>
+                        <hr>
+                    </li>
+                    <li>
+                        <a class="text-white" style="text-decoration: none;">Geysers On Rent in Sikandarpur Gurgaon
+
+                        </a>
+                        <hr>
+                    </li>
+                    <li>
+                        <a class="text-white" style="text-decoration: none;">Geysers On Rent in Gurgaon Sector 29</a>
+                        <hr>
+                    </li>
+
+
+
+
+
+                </ul>
+            </div>
+            <div class="col-lg-3">
+                <ul class="list-unstyled">
+                    <li>
+                        <a class="text-white" style="text-decoration: none;">
+                            Geysers On Rent in Gurgaon Sector 14
+
+                        </a>
+                        <hr>
+                    </li>
+                    <li>
+                        <a class="text-white" style="text-decoration: none;">
+                            Geysers On Rent in Sadar Bazar Gurgaon
+
+                        </a>
+                        <hr>
+                    </li>
+                    <li>
+                        <a class="text-white" style="text-decoration: none;">
+                            Geysers On Rent in Udyog Vihar Gurgaon
+
+
+
+                        </a>
+                        <hr>
+                    </li>
+                    <li>
+                        <a class="text-white" style="text-decoration: none;">Geysers On Rent in Mg Road Gurgaon</a>
+                        <hr>
+                    </li>
+
+
+
+
+                </ul>
+            </div>
+            <div class="col-lg-3">
+                <ul class="list-unstyled">
+                    <li>
+                        <a class="text-white" style="text-decoration: none;">
+                            Geysers On Rent in IMT Manesar
+
+                        </a>
+                        <hr>
+                    </li>
+                    <li>
+                        <a class="text-white" style="text-decoration: none;">
+                            Geysers On Rent in Model Town Gurgaon
+
+                        </a>
+                        <hr>
+                    </li>
+                    <li>
+                        <a class="text-white" style="text-decoration: none;">
+                            Geysers On Rent in Gurgaon Sector 44
+
+
+
+                        </a>
+                        <hr>
+                    </li>
+                    <li>
+                        <a class="text-white" style="text-decoration: none;">Geysers On Rent in Gurgaon Sector 49</a>
+                        <hr>
+                    </li>
+
+
+
+
+                </ul>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <!-- ---------------------------------------------------------End  Branch Section------------------------------------------ -->
+
+    <!-- -----------------Start Poster ---------------------------- -->
     <div class="container-fluid p-0 position-relative poster">
         <img src="assets/poster_1.jpg" width="100%" alt="">
         <div class="poster_overlay"></div>
         <div class="poster_content text-center">
-            <h1 class="fw-bold text-uppercase">Rent 2 Me <br>  Rental services</h1>
+            <h1 class="fw-bold text-uppercase">Rent 2 Me <br> Rental services</h1>
             <p class=""> We ensure comfort and convenience at affordable prices for all customers.</p>
             <a href="https://api.whatsapp.com/send?phone=918800120156&text=hello" target="_blank"
                 class=" form_btn rounded px-3 py-2 text-white">Book Now</a>
@@ -752,7 +481,7 @@
         </div>
     </div>
     <!-- -----------------End Poster --------------------- -->
-  
+
     <!-- ------------Start Footer ----------------------------- -->
 
     <div class="container-fluid footer p-4">
@@ -814,7 +543,7 @@
                     <li><a href="Ac-on-Rent.html">Split AC</a> </li>
                     <li><a href="Ac-on-Rent.html">Window AC</a> </li>
                     <li> <a href="Oil-Heater-on-Rent.html">Oil Room Heater</a> </li>
-              
+
                 </ul>
             </div>
             <div class="col-lg-2 p-4">
@@ -871,6 +600,64 @@
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide/dist/js/splide.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+   document.addEventListener("DOMContentLoaded", function () {
+    // सभी "Book Now" बटन को सेलेक्ट करें
+    const bookNowButtons = document.querySelectorAll(".quick-view");
+
+    bookNowButtons.forEach(button => {
+        button.addEventListener("click", function () {
+            // कार्ड को पहचानें
+            const card = this.closest(".card");
+
+            // कार्ड से डेटा प्राप्त करें
+            const productName = card.querySelector(".card-title").innerText;
+            const capacity = card.querySelector("#capacity").value;  // सही ID use करें
+            const duration = card.querySelector("#duration").value;
+            
+            // कीमत प्राप्त करें और ₹1000 जोड़ें
+            let price = parseInt(card.querySelector("#price").innerText.replace("₹", "").trim());
+            let finalPrice = price + 1000;  // ₹1000 जोड़ें
+
+            // फॉर्म में डेटा अपडेट करें
+            document.getElementById("modal-product-name").innerText = productName;
+            document.getElementById("modal-product-name-input").value = productName;
+            document.getElementById("modal-rating").value = capacity;
+            document.getElementById("modal-duration").value = duration;
+            document.getElementById("modal-total-price").innerText = `₹${finalPrice}`;
+            document.getElementById("modal-total-price-input").value = finalPrice;
+        });
+    });
+});
+
+  // Price Table
+  const priceTable = {
+        "15L": { "3": 4500, "4": 5000, "5": 5500, "6": 6000, "7": 6500, "8": 7000, "9": 7500 },
+        "20L": { "3": 5000, "4": 5500, "5": 6000, "6": 6500, "7": 7000, "8": 7500, "9": 8000 },
+        "25L": { "3": 5500, "4": 6000, "5": 6500, "6": 7000, "7": 7500, "8": 8000, "9": 8500 }
+    };
+
+    // Elements
+    const capacitySelect = document.getElementById("capacity");
+    const durationSelect = document.getElementById("duration");
+    const priceDisplay = document.getElementById("price");
+
+    // Function to update price
+    function updatePrice() {
+        const capacity = capacitySelect.value;
+        const duration = durationSelect.value;
+        const price = priceTable[capacity][duration];
+
+        priceDisplay.textContent = `₹${price}`;
+    }
+
+    // Event Listeners
+    capacitySelect.addEventListener("change", updatePrice);
+    durationSelect.addEventListener("change", updatePrice);
+
+    // Initialize Price on Load
+    updatePrice();
+    </script>
 </body>
 
 </html>

@@ -155,7 +155,7 @@
                                     <label class="mb-1" for="capacity">Capacity:</label>
                                     <select id="capacity" class="form-select">
                                         <option value="1ton">1 Ton</option>
-                                        <option value="3ton">1.5 Ton</option>
+                                        <option value="1.5ton">1.5 Ton</option>
                                         <option value="2ton">2 Ton</option>
                                     </select>
                                 </div>
@@ -169,10 +169,12 @@
                                         <option value="3">3 Months</option>
                                         <option value="4">4 Months</option>
                                         <option value="5">5 Months</option>
-                                        <option value="3">6 Months</option>
-                                        <option value="4">7 Months</option>
-                                        <option value="Annually">Annually</option>
+                                        <option value="6">6 Months</option>
+                                        <option value="7">7 Months</option>
+                                        <option value="8">8 Months</option>
+                                        <option value="9">Annually</option>
                                     </select>
+                                    
                                 </div>
                             </div>
                             <div class="col-lg-12">
@@ -183,8 +185,9 @@
                                         <span id="price" class="price-display fw-bold text-danger fs-4">₹6500</span>
                                     </div>
                                     <div id="payment-info">
-                                        <small>Payment on Advance
+                                        <small class="fw-bold">Payment on Advance
                                             Security Deposit ₹2000</small>
+                                            <small class="text-danger">Refundable Security 1100*</small>
                                     </div> <!-- Placeholder for payment and security info -->
                                 </div>
                             </div>
@@ -201,114 +204,290 @@
                     </div>
                 </div>
             </div>
+            <div class="col-lg-4">
+                <div class="card position-relative p-3 mt-4" id="card1">
+                    <div class="top-card">
+                        <div class="img-container rounded">
+                            <!-- Default image -->
+                            <img src="assets/windowac-1.jpg" class="card-img-top rounded" alt="Product Image">
+                            <!-- Hover image -->
+                            <img src="assets/windowac-1.jpg" class="hover-image" alt="Hover Product Image">
+                            <div class="icon-container">
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Split AC</h5>
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <!-- Product Rating -->
+                                <div class="product-rating">
+                                    <label class="mb-1" for="rating">Rating:</label>
+                                    <select id="rating" class="form-select">
+                                        <option value="3">3 Star</option>
+                                        <option value="4">4 Star</option>
+                                        <option value="5">5 Star</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <!-- Capacity Selection -->
+                                <div class="product-capacity">
+                                    <label class="mb-1" for="capacity">Capacity:</label>
+                                    <select id="capacity" class="form-select">
+                                        <option value="1ton">1 Ton</option>
+                                        <option value="1.5ton">1.5 Ton</option>
+                                        <option value="2ton">2 Ton</option>
+                                    </select>
+                                </div>
+
+                            </div>
+                            <div class="col-lg-12">
+                                <!-- Duration Selection -->
+                                <div class="product-duration">
+                                    <label class="mb-1" for="duration">Duration:</label>
+                                    <select id="duration" class="form-select">
+                                        <option value="3">3 Months</option>
+                                        <option value="4">4 Months</option>
+                                        <option value="5">5 Months</option>
+                                        <option value="6">6 Months</option>
+                                        <option value="7">7 Months</option>
+                                        <option value="8">8 Months</option>
+                                        <option value="9">Annually</option>
+                                    </select>
+                                    
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <!-- Price Display -->
+                                <div class="product-price mt-3">
+                                    <label for="price">Price:</label>
+                                    <div>
+                                        <span id="price" class="price-display fw-bold text-danger fs-4">₹6500</span>
+                                    </div>
+                                    <div id="payment-info">
+                                        <small class="fw-bold">Payment on Advance
+                                            Security Deposit ₹2000</small>
+                                            <small class="text-danger">Refundable Security 1100*</small>
+                                    </div> <!-- Placeholder for payment and security info -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quick-view mt-3" data-bs-toggle="modal" data-bs-target="#bookingFormModal2">Book Now
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <!-- -----------------------End All Acr---------------------------- -->
-    <!-- Modal Structure card-1 Window AC 0.75 Ton-->
+    <!-- Modal Structure card-1 Window AC-->
     <div class="modal fade" id="bookingFormModal1" data-form="form1" tabindex="-1"
     aria-labelledby="bookingFormModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title text-uppercase fw-bold" id="bookingFormModalLabel">Enquiry Now</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <!-- Form Content -->
-                <form id="acform1">
-                    <input type="hidden" name="access_key" value="">
-                    <div class="row">
-                        <div class="form-group col-md-4 col-6 mb-2">
-                            <label class="text-dark" for="">Name</label>
-                            <input type="text" name="name" class="form-control" placeholder="Your Name">
-                        </div>
-                        <div class="form-group col-md-4 col-6 mb-2">
-                            <label class="text-dark" for="">Email</label>
-                            <input type="email" name="email" class="form-control" placeholder="Enter Email">
-                        </div>
-                   
-
-                    
-                        <div class="form-group col-md-4 col-6 mb-2">
-                            <label class="text-dark">Phone Number</label>
-                            <input type="text" name="phone" class="form-control" placeholder="Phone Number"
-                                required>
-                        </div>
-                        <div class="form-group col-md-4 col-6 mb-2">
-                            <label class="text-dark">WhatsApp Number</label>
-                            <input type="text" name="whatsapp" class="form-control" placeholder="WhatsApp Number"
-                                required>
-                        </div>
+<div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title text-uppercase fw-bold" id="bookingFormModalLabel">Enquiry Now</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <!-- Form Content -->
+            <form id="acform1"action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="8a75c0d2-6689-4a3f-82af-49f90a8e8ff5">
                 
-
-                  
-                        <div class="form-group col-md-4 col-6 mb-2">
-                            <label class="text-dark">Rating</label>
-                <select id="modal-rating" class="form-select" disabled>
-                    <option value="3">3 Star</option>
-                    <option value="4">4 Star</option>
-                    <option value="5">5 Star</option>
-                </select>
-                        </div>
-
-                        <div class="form-group col-md-4 col-6 mb-2">
-                            
-                <label class="text-dark">Duration</label>
-                <select id="modal-duration" class="form-select" disabled>
-                    <option value="3">3 Months</option>
-                    <option value="4">4 Months</option>
-                    <option value="5">5 Months</option>
-                    <option value="3">6 Months</option>
-                    <option value="4">7 Months</option>
-                    <option value="Annually">Annually</option>
-                </select>
-                        </div>
-                
-                        <div class="form-group col-md-4 mb-2">
-                            <label class="text-dark" for="">Address</label>
-                            <textarea name="Address" rows="3" class="form-control"
-                                placeholder="Your Address"></textarea>
-                        </div>
-                        <div class="form-group col-md-4 mb-2">
-                            <label class="text-dark" for="">Message</label>
-                            <textarea class="form-control" name="message" rows="3" placeholder="Message"></textarea>
-                        </div>
-                 
-                
-                        <div class="form-group col-md-4 col-6 mb-2">
-                            <label class="text-dark">Capacity</label>
-                            <select id="modal-capacity" class="form-select" disabled>
-                                <option value="1ton">1 Ton</option>
-                                <option value="2ton">2 Ton</option>
-                                <option value="3ton">1.5 Ton</option>
-                            </select>
-                        </div>
-                        <div class="form-group col-md-4 col-6 mb-2">
-                            <label class="fw-bold mt-3 text-dark">Total Price: <span
-                                class="fw-bold text-danger">Security Deposit ₹2000 extra</span></label>
-                <p class="fs-4 text-danger fw-bold">
-                    <span id="modal-total-price">₹8500</span> <!-- JavaScript yahan update karega -->
-                </p>
-                        </div>
-              
-
-
-                 
-                      
-                 </div>
-
-                    <div class="text-center">
-                        <button type="submit" name="btn" class="form_btn rounded">Submit</button>
+                <div class="row">
+                    <div class="form-group col-md-4 col-6 mb-2">
+                        <label class="text-dark" for="">Name</label>
+                        <input type="text" name="name" class="form-control" placeholder="Your Name">
                     </div>
-                </form>
-            </div>
+                    <div class="form-group col-md-4 col-6 mb-2">
+                        <label class="text-dark" for="">Email</label>
+                        <input type="email" name="email" class="form-control" placeholder="Enter Email">
+                    </div>
+                    <div class="form-group col-md-4 col-6 mb-2">
+                        <label class="text-dark">Phone Number</label>
+                        <input type="text" name="phone" class="form-control" placeholder="Phone Number" required>
+                    </div>
+                    <div class="form-group col-md-4 col-6 mb-2">
+                        <label class="text-dark">WhatsApp Number</label>
+                        <input type="text" name="whatsapp" class="form-control" placeholder="WhatsApp Number" required>
+                    </div>
+                    <div class="form-group col-md-4 mb-2">
+                        <label class="text-dark" for="">Address</label>
+                        <textarea name="Address" rows="3" class="form-control" placeholder="Your Address"></textarea>
+                    </div>
+                    <div class="form-group col-md-4 mb-2">
+                        <label class="text-dark" for="">Message</label>
+                        <textarea class="form-control" name="message" rows="3" placeholder="Message"></textarea>
+                    </div>
+
+                    <!-- Product Name -->
+                    <div class="form-group col-md-3 col-6 mb-2">
+                        <label class="text-dark">Product Name</label>
+                        <p class="fs-5 text-primary fw-bold" id="modal-product-name"></p>
+                        <input type="hidden" name="product_name" id="modal-product-name-input"> <!-- Hidden Input -->
+                    </div>
+
+                    <!-- Rating -->
+                    <div class="form-group col-md-3 col-6 mb-2">
+                        <label class="text-dark">Rating</label>
+                        <select name="rating" id="modal-rating" class="form-select">
+                            <option value="3">3 Star</option>
+                            <option value="4">4 Star</option>
+                            <option value="5">5 Star</option>
+                        </select>
+                    </div>
+
+                    <!-- Duration -->
+                    <div class="form-group col-md-3 col-6 mb-2">
+                        <label class="text-dark">Duration</label>
+                        <select id="modal-duration" name="duration" class="form-select" >
+                            <option value="3">3 Months</option>
+                            <option value="4">4 Months</option>
+                            <option value="5">5 Months</option>
+                            <option value="6">6 Months</option>
+                            <option value="7">7 Months</option>
+                            <option value="8">8 Months</option>
+                            <option value="9">Annually</option>
+                        </select>
+                    </div>
+
+                    <!-- Capacity -->
+                    <div class="form-group col-md-3 col-6 mb-2">
+                        <label class="text-dark">Capacity</label>
+                        <select id="modal-capacity" name="capacity" class="form-select" >
+                            <option value="1ton">1 Ton</option>
+                            <option value="2ton">2 Ton</option>
+                            <option value="1.5ton">1.5 Ton</option>
+                        </select>
+                    </div>
+
+                    <!-- Total Price -->
+                    <div class="form-group col-md-3 col-6 mb-2">
+                        <label class="fw-bold mt-3 text-dark">Total Price: 
+                            <span class="fw-bold text-danger">Security Deposit ₹2000 extra</span>
+                        </label>
+                        <p class="fs-4 text-danger fw-bold">
+                            <span id="modal-total-price">₹8500</span> <!-- Displayed Price -->
+                        </p>
+                        <input type="hidden" name="price" id="modal-total-price-input"> <!-- Hidden Input for Form -->
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <button type="submit" name="btn" class="form_btn rounded">Submit</button>
+                </div>
+            </form>
         </div>
     </div>
 </div>
+</div>
 
+        <!-- Modal Structure card-2 Split AC-->
+        <div class="modal fade" id="bookingFormModal2" data-form="form2" tabindex="-1"
+        aria-labelledby="bookingFormModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-uppercase fw-bold" id="bookingFormModalLabel">Enquiry Now</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Form Content -->
+                    <form id="acform2" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="8a75c0d2-6689-4a3f-82af-49f90a8e8ff5">
+                        <div class="row">
+                            <div class="form-group col-md-4 col-6 mb-2">
+                                <label class="text-dark" for="">Name</label>
+                                <input type="text" name="name" class="form-control" placeholder="Your Name">
+                            </div>
+                            <div class="form-group col-md-4 col-6 mb-2">
+                                <label class="text-dark" for="">Email</label>
+                                <input type="email" name="email" class="form-control" placeholder="Enter Email">
+                            </div>
+                            <div class="form-group col-md-4 col-6 mb-2">
+                                <label class="text-dark">Phone Number</label>
+                                <input type="text" name="phone" class="form-control" placeholder="Phone Number"
+                                    required>
+                            </div>
+                            <div class="form-group col-md-4 col-6 mb-2">
+                                <label class="text-dark">WhatsApp Number</label>
+                                <input type="text" name="whatsapp" class="form-control" placeholder="WhatsApp Number"
+                                    required>
+                            </div>
+                            <div class="form-group col-md-4 mb-2">
+                                <label class="text-dark" for="">Address</label>
+                                <textarea name="Address" rows="3" class="form-control"
+                                    placeholder="Your Address"></textarea>
+                            </div>
+                            <div class="form-group col-md-4 mb-2">
+                                <label class="text-dark" for="">Message</label>
+                                <textarea class="form-control" name="message" rows="3" placeholder="Message"></textarea>
+                            </div>
+                                <!-- Product Name -->
+                    <div class="form-group col-md-3 col-6 mb-2">
+                        <label class="text-dark">Product Name</label>
+                        <p class="fs-5 text-primary fw-bold" id="modal-product-name"></p>
+                        <input type="hidden" name="product_name" id="modal-product-name-input"> <!-- Hidden Input -->
+                    </div>
 
+                            <div class="form-group col-md-3 col-6 mb-2">
+                                <label class="text-dark">Rating</label>
+                                <select id="modal-rating" name="rating" class="form-select">
+                                    <option value="3">3 Star</option>
+                                    <option value="4">4 Star</option>
+                                    <option value="5">5 Star</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-3 col-6 mb-2">
 
+                                <label class="text-dark">Duration</label>
+                                <!-- Modal में भी सही options दें -->
+                                <select id="modal-duration" name="duration" class="form-select">
+                                    <option value="3">3 Months</option>
+                                    <option value="4">4 Months</option>
+                                    <option value="5">5 Months</option>
+                                    <option value="6">6 Months</option>
+                                    <option value="7">7 Months</option>
+                                    <option value="8">8 Months</option>
+                                    <option value="9">Annually</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-3 col- mb-2">
+                                <label class="text-dark">Capacity</label>
+                                <select id="modal-capacity" name="capacity" class="form-select">
+                                    <option value="1ton">1 Ton</option>
+                                    <option value="2ton">2 Ton</option>
+                                    <option value="1.5ton">1.5 Ton</option>
+                                </select>
+                            </div>
+                           
+                            <!-- Total Price -->
+                    <div class="form-group col-md-3 col-6 mb-2">
+                        <label class="fw-bold mt-3 text-dark">Total Price: 
+                            <span class="fw-bold text-danger">Security Deposit ₹2000 extra</span>
+                        </label>
+                        <p class="fs-4 text-danger fw-bold">
+                            <span id="modal-total-price">₹8500</span> <!-- Displayed Price -->
+                        </p>
+                        <input type="hidden" name="price" id="modal-total-price-input"> <!-- Hidden Input for Form -->
+                    </div>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" name="btn" class="form_btn rounded">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
  
+ 
+
+
+
+
     <!-- -----------------------Start Terms Condition---------------------------- -->
     <div class="container-fluid p-4">
         <div class="row">
@@ -893,6 +1072,91 @@
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide/dist/js/splide.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        // once again design card
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll(".card").forEach((card, index) => {
+      let cardRating = card.querySelector(".product-rating select");
+      let cardCapacity = card.querySelector(".product-capacity select");
+      let cardDuration = card.querySelector(".product-duration select");
+      let cardPrice = card.querySelector(".price-display");
+
+      // Har card ke liye alag pricing table
+      let pricingTables = [
+          { // First Card (Window AC)
+              "1ton": { "3": { "3": 7500, "4": 8500, "5": 9500 }, "4": { "3": 8500, "4": 9500, "5": 10500 }, "5": { "3": 9500, "4": 10250, "5": 10500 } ,"6": { "3": 10000, "4": 10500, "5": 10750 },"7": { "3": 10500, "4": 10750, "5": 11000 },"8": { "3": 10650, "4": 10850, "5": 11250 },"9": { "3": 11000, "4": 11500, "5": 12000 }},
+              "1.5ton": { "3": { "3": 7700, "4": 8700, "5": 9700 }, "4": { "3": 8700, "4": 9700, "5": 10700 }, "5": { "3": 9700, "4": 10450, "5": 10700 },"6": { "3": 10200, "4": 10700, "5": 10950 },"7": { "3": 10700, "4": 10950, "5": 11200 },"8": { "3": 10850, "4": 11050, "5": 11450 },"9": { "3": 11200, "4": 11700, "5": 12200 }},
+              "2ton": { "3": { "3": 8200, "4": 9200, "5": 10200 }, "4": { "3": 9200, "4": 10200, "5": 11200 }, "5": { "3": 10200, "4": 10950, "5": 11200 },"6": { "3": 10700, "4": 11200, "5": 11450 },"7": { "3": 11200, "4": 11450, "5": 11700 },"8": { "3": 11350, "4": 11550, "5": 11950 },"9": { "3": 11700, "4": 12200, "5": 12700 }},
+          },
+          { 
+            // Second Card (Split AC)
+            "1ton": { "3": { "3": 10500, "4": 11500, "5": 12500 }, "4": { "3": 11500, "4": 12500, "5": 13500 }, "5": { "3": 12500, "4": 13250, "5": 13500 },"6": { "3": 13000, "4": 13500, "5": 13750 },"7": { "3": 13500, "4": 13750, "5": 14000 },"8": { "3": 13650, "4": 13850, "5": 14250 },"9": { "3": 14000, "4": 14500, "5": 14700 }},
+            "1.5ton": { "3": { "3": 10700, "4": 11700, "5": 12700 }, "4": { "3": 11700, "4": 12700, "5": 13700 }, "5": { "3": 12700, "4": 13450, "5": 13700 },"6": { "3": 13200, "4": 13700, "5": 13950 },"7": { "3": 13700, "4": 13950, "5": 14200 },"8": { "3": 13850, "4": 14050, "5": 14450 },"9": { "3": 14200, "4": 14700, "5": 15200 }},
+            "2ton": { "3": { "3": 11200, "4": 12200, "5": 13200 }, "4": { "3": 12200, "4": 13200, "5": 14200 }, "5": { "3": 13200, "4": 13950, "5": 14200 },"6": { "3": 13700, "4": 14200, "5": 14450 },"7": { "3": 14200, "4": 14450, "5": 14700 },"8": { "3": 14350, "4": 14550, "5": 14950 },"9": { "3": 14700, "4": 15200, "5": 15700 }},
+        },
+      ];
+
+      function calculatePrice() {
+          let selectedCapacity = cardCapacity.value;
+          let selectedDuration = cardDuration.value;
+          let selectedRating = cardRating.value;
+
+          let finalPrice = 0;
+          let pricing = pricingTables[index]; // Current card ki pricing table use kare
+
+          if (pricing[selectedCapacity] && pricing[selectedCapacity][selectedDuration] && pricing[selectedCapacity][selectedDuration][selectedRating]) {
+              finalPrice = pricing[selectedCapacity][selectedDuration][selectedRating];
+          }
+
+          cardPrice.innerText = `₹${finalPrice}`;
+      }
+
+      cardRating.addEventListener("change", calculatePrice);
+      cardCapacity.addEventListener("change", calculatePrice);
+      cardDuration.addEventListener("change", calculatePrice);
+
+      calculatePrice(); // Initial Price Set Kare
+  });
+});
+
+
+
+//modal
+document.addEventListener("DOMContentLoaded", function () {
+  const bookNowButtons = document.querySelectorAll(".quick-view");
+
+  bookNowButtons.forEach(button => {
+      button.addEventListener("click", function () {
+          const card = this.closest(".card"); // जिस कार्ड का बटन दबाया गया
+          const formId = this.getAttribute("data-bs-target").replace("#", ""); // सही modal का ID लें
+          const modal = document.getElementById(formId); // Modal का पूरा element लें
+          
+          // कार्ड से डेटा निकालें
+          const productName = card.querySelector(".card-title").textContent.trim(); // नाम लें
+          const rating = card.querySelector(".product-rating select").value;
+          const capacity = card.querySelector(".product-capacity select").value;
+          const duration = card.querySelector(".product-duration select").value;
+          const priceText = card.querySelector(".product-price .price-display").textContent; // ₹6500
+          const price = parseInt(priceText.replace(/[^\d]/g, "")); // ₹ को हटाकर केवल नंबर लें
+
+          // कुल कीमत में ₹2000 जोड़ें
+          const totalPrice = price + 2000;
+
+          // संबंधित फॉर्म के फील्ड्स को अपडेट करें
+          modal.querySelector("#modal-product-name").textContent = productName; // Name Show करें
+          modal.querySelector("#modal-product-name-input").value = productName; // Hidden Input में डालें (फॉर्म के लिए)
+          
+          modal.querySelector("#modal-rating").value = rating;
+          modal.querySelector("#modal-capacity").value = capacity;
+          modal.querySelector("#modal-duration").value = duration;
+          
+          modal.querySelector("#modal-total-price").textContent = `₹${totalPrice}`; // Price को Show करें
+          modal.querySelector("#modal-total-price-input").value = totalPrice; // Hidden Input में Price डालें (फॉर्म के लिए)
+      });
+  });
+});
+    </script>
+
 </body>
 
 </html>

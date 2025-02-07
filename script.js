@@ -2,68 +2,14 @@ document.querySelector(".menu-icon").addEventListener("click", function () {
   document.querySelector(".nav-links").classList.toggle("active");
 });
 
-// once again design card
-document.addEventListener("DOMContentLoaded", function () {
-  // Select Elements
-  let cardRating = document.getElementById("rating");
-  let cardCapacity = document.getElementById("capacity");
-  let cardDuration = document.getElementById("duration");
-  let cardPrice = document.getElementById("price"); // Card Price
 
-  let modalRating = document.getElementById("modal-rating");
-  let modalCapacity = document.getElementById("modal-capacity");
-  let modalDuration = document.getElementById("modal-duration");
-  let modalTotalPrice = document.getElementById("modal-total-price"); // Modal Price
 
-  function calculatePrice() {
-      let basePrice = 6500;
-      let extraPrice = 0;
 
-      // Rating Based Price
-      if (cardRating.value == "4") {
-          basePrice = 7000;
-      } else if (cardRating.value == "5") {
-          basePrice = 7500;
-      }
 
-      // Capacity Based Price
-      if (cardCapacity.value == "3ton") {
-          extraPrice += 2000;
-      } else if (cardCapacity.value == "2ton") {
-          extraPrice += 4000;
-      }
 
-      // Duration Based Price
-      if (cardDuration.value == "4") {
-          extraPrice += 1000;
-      } else if (cardDuration.value == "5") {
-          extraPrice += 2000;
-      }
 
-      // Final Price
-      let finalPrice = basePrice + extraPrice;
-      cardPrice.innerText = `₹${finalPrice}`;
 
-      // Update Modal Price (with Security Deposit)
-      let totalPrice = finalPrice + 2000;
-      modalTotalPrice.innerText = `₹${totalPrice}`;
-  }
 
-  // Card dropdowns change hone par price update ho
-  cardRating.addEventListener("change", calculatePrice);
-  cardCapacity.addEventListener("change", calculatePrice);
-  cardDuration.addEventListener("change", calculatePrice);
-
-  // Modal Open hone par values copy ho
-  function updateModalValues() {
-      modalRating.value = cardRating.value;
-      modalCapacity.value = cardCapacity.value;
-      modalDuration.value = cardDuration.value;
-      calculatePrice(); // Modal price update kare
-  }
-
-  document.querySelector("[data-bs-target='#bookingFormModal1']").addEventListener("click", updateModalValues);
-});
 
 
 
@@ -129,21 +75,8 @@ let url =
 let formIds = [
   "acform1",
   "acform2",
-  "acform3",
-  "acform4",
-  "acform5",
-  "acform6",
-  "acform7",
-  "acform8",
   "heaterform1",
-  "heaterform2",
-  "heaterform3",
-  "heaterform4",
-  "heaterform5",
-  "heaterform6",
   "gesform1",
-  "gesform2",
-  "gesform3",
 ];
 
 // Har form ID ke liye loop lagaye

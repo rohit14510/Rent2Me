@@ -123,869 +123,166 @@
         </div>
         <div class="row">
             <div class="col-lg-4">
-                <div class="card position-relative p-3 mt-4">
+                <div class="card position-relative p-3 mt-4" id="card1">
                     <div class="top-card">
                         <div class="img-container rounded">
-                            <!-- Default image -->
-                            <img src="assets/oilheater-1.jpg" class="card-img-top rounded" alt="Product Image">
-                            <!-- Hover image -->
-                            <img src="assets/Room Heater2.jpg" class="hover-image" alt="Hover Product Image">
+                            <img src="assets/oilheater-1.jpg"class="card-img-top rounded" alt="Product Image">
+                            <img src="assets/oilheater-1.jpg" class="hover-image" alt="Hover Product Image">
                             <div class="icon-container">
                                 <i class="fa-solid fa-heart"></i>
                             </div>
                         </div>
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">Oil Heater
-                        </h5>
-                        <table class="table product-card-table">
-                            <thead>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="text-muted">Heater Type</td>
-                                    <td class="fw-bold">Oil Heater
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="text-muted">Material</td>
-                                    <td class="fw-bold">Steel</td>
-                                </tr>
-                                <tr>
-                                    <td class="text-muted">Power Consumption</td>
-                                    <td class="fw-bold">Range: 300W to 9000W</td>
-                                </tr>
-
-                            </tbody>
-                        </table>
-                        <hr>
-                        <div class="d-flex justify-content-between m-0 p-0">
-                            <p class="card-text text-muted CardPrice "data-form="heater_form1">₹2500 /Seasonal</p>
-                            <p class="card-text text-muted"><i class="fa-solid fa-truck"></i> 3-5 days
-                                <span class="info-container">
-                                    <i class="fa-solid fa-circle-info info-icon"></i>
-                                    <span class="info-text">*Subject to profile verification. 90% profiles <br> get
-                                        verified within just 24 hours</span>
-                                </span>
-                            </p>
-                        </div>
-                        <!-- Book Now Buttons -->
-                        <div class="quick-view" data-bs-toggle="modal" data-bs-target="#bookingFormModal1">Book Now
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="card position-relative p-3 mt-4">
-                    <div class="top-card">
-                        <div class="img-container rounded">
-                            <!-- Default image -->
-                            <img src="assets/oil_Heater.jpg" class="card-img-top rounded" alt="Product Image">
-                            <!-- Hover image -->
-                            <img src="assets/Room Heater2.jpg" class="hover-image" alt="Hover Product Image">
-                            <div class="icon-container">
-                                <i class="fa-solid fa-heart"></i>
+                        <h5 class="card-title">Oil Heater</h5>
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <!-- Product Rating -->
+                                <div class="product-rating">
+                                    <label class="mb-1" for="capacity">Variants:</label>
+                                    <select id="capacity" class="form-select">
+                                        <option value="7Fin">7 FIN</option>
+                                        <option value="9Fin">9 FIN</option>
+                                        <option value="11Fin">11 FIN</option>
+                                        <option value="13Fin">13 FIN</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <!-- Duration Selection -->
+                                <div class="product-duration">
+                                    <label class="mb-1" for="duration">Duration:</label>
+                                    <select id="duration" class="form-select">
+                                        <option value="3">3 Months</option>
+                                        <option value="4">4 Months</option>
+                                        <option value="5">5 Months</option>
+                                        <option value="6">6 Months</option>
+                                        <option value="7">7 Months</option>
+                                        <option value="8">8 Months</option>
+                                        <option value="9">Annually</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <!-- Price Display -->
+                                <div class="product-price mt-3">
+                                    <label for="price">Price:</label>
+                                    <div>
+                                        <span id="price" class="price-display fw-bold text-danger fs-4">₹6500</span>
+                                    </div>
+                                    <div id="payment-info">
+                                        <small>Payment on Advance
+                                            Security Deposit ₹1000</small>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Oil Room Heater </h5>
-                        <table class="table product-card-table">
-                            <thead>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="text-muted">Heater Type</td>
-                                    <td class="fw-bold">Oil Room Heater </td>
-                                </tr>
-                                <tr>
-                                    <td class="text-muted">Material</td>
-                                    <td class="fw-bold">Steel</td>
-                                </tr>
-                                <tr>
-                                    <td class="text-muted">Power Consumption</td>
-                                    <td class="fw-bold">Range: 800W to 2000W</td>
-                                </tr>
-
-                            </tbody>
-                        </table>
-                        <hr>
-                        <div class="d-flex justify-content-between m-0 p-0">
-                            <p class="card-text text-muted CardPrice "data-form="heater_form2">₹949 /Seasonal</p>
-                            <p class="card-text text-muted"><i class="fa-solid fa-truck"></i> 3-5 days
-                                <span class="info-container">
-                                    <i class="fa-solid fa-circle-info info-icon"></i>
-                                    <span class="info-text">*Subject to profile verification. 90% profiles <br> get
-                                        verified within just 24 hours</span>
-                                </span>
-                            </p>
-                        </div>
-                        <!-- Book Now Buttons -->
-                        <div class="quick-view" data-bs-toggle="modal" data-bs-target="#bookingFormModal2">Book Now
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="card position-relative p-3 mt-4">
-                    <div class="top-card">
-                        <div class="img-container rounded">
-                            <!-- Default image -->
-                            <img src="assets/oil_Heater.jpg" class="card-img-top rounded" alt="Product Image">
-                            <!-- Hover image -->
-                            <img src="assets/Room Heater2.jpg" class="hover-image" alt="Hover Product Image">
-                            <div class="icon-container">
-                                <i class="fa-solid fa-heart"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Oil Filled Heater </h5>
-                        <table class="table product-card-table">
-                            <thead>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="text-muted">Heater Type</td>
-                                    <td class="fw-bold">Electric Heater</td>
-                                </tr>
-                                <tr>
-                                    <td class="text-muted">Material</td>
-                                    <td class="fw-bold">Steel</td>
-                                </tr>
-                                <tr>
-                                    <td class="text-muted">Power Consumption</td>
-                                    <td class="fw-bold">Range: 800W to 2000W</td>
-                                </tr>
-
-                            </tbody>
-                        </table>
-                        <hr>
-                        <div class="d-flex justify-content-between m-0 p-0">
-                            <p class="card-text text-muted CardPrice "data-form="heater_form3">₹1455 /Seasonal</p>
-                            <p class="card-text text-muted"><i class="fa-solid fa-truck"></i> 3-5 days
-                                <span class="info-container">
-                                    <i class="fa-solid fa-circle-info info-icon"></i>
-                                    <span class="info-text">*Subject to profile verification. 90% profiles <br> get
-                                        verified within just 24 hours</span>
-                                </span>
-                            </p>
-                        </div>
-                        <!-- Book Now Buttons -->
-                        <div class="quick-view" data-bs-toggle="modal" data-bs-target="#bookingFormModal3">Book Now
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="card position-relative p-3 mt-4">
-                    <div class="top-card">
-                        <div class="img-container rounded">
-                            <!-- Default image -->
-                            <img src="assets/oil_Heater.jpg" class="card-img-top rounded" alt="Product Image">
-                            <!-- Hover image -->
-                            <img src="assets/Room Heater2.jpg" class="hover-image" alt="Hover Product Image">
-                            <div class="icon-container">
-                                <i class="fa-solid fa-heart"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Oil Filled Room Heater </h5>
-                        <table class="table product-card-table">
-                            <thead>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="text-muted">Heater Type</td>
-                                    <td class="fw-bold">Oil Filled Room Heater</td>
-                                </tr>
-                                <tr>
-                                    <td class="text-muted">Material</td>
-                                    <td class="fw-bold">Steel</td>
-                                </tr>
-                                <tr>
-                                    <td class="text-muted">Power Consumption</td>
-                                    <td class="fw-bold">Range: 800W to 2000W</td>
-                                </tr>
-
-                            </tbody>
-                        </table>
-                        <hr>
-                        <div class="d-flex justify-content-between m-0 p-0">
-                            <p class="card-text text-muted CardPrice "data-form="heater_form4">₹799 /Seasonal</p>
-                            <p class="card-text text-muted"><i class="fa-solid fa-truck"></i> 3-5 days
-                                <span class="info-container">
-                                    <i class="fa-solid fa-circle-info info-icon"></i>
-                                    <span class="info-text">*Subject to profile verification. 90% profiles <br> get
-                                        verified within just 24 hours</span>
-                                </span>
-                            </p>
-                        </div>
-                        <!-- Book Now Buttons -->
-                        <div class="quick-view" data-bs-toggle="modal" data-bs-target="#bookingFormModal4">Book Now
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="card position-relative p-3 mt-4">
-                    <div class="top-card">
-                        <div class="img-container rounded">
-                            <!-- Default image -->
-                            <img src="assets/oil_Heater.jpg" class="card-img-top rounded" alt="Product Image">
-                            <!-- Hover image -->
-                            <img src="assets/Room Heater2.jpg" class="hover-image" alt="Hover Product Image">
-                            <div class="icon-container">
-                                <i class="fa-solid fa-heart"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Oil Heater Radiator </h5>
-                        <table class="table product-card-table">
-                            <thead>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="text-muted">Heater Type</td>
-                                    <td class="fw-bold">Oil Heater Radiator </td>
-                                </tr>
-                                <tr>
-                                    <td class="text-muted">Material</td>
-                                    <td class="fw-bold">Steel</td>
-                                </tr>
-                                <tr>
-                                    <td class="text-muted">Power Consumption</td>
-                                    <td class="fw-bold">Range: 800W to 2000W</td>
-                                </tr>
-
-                            </tbody>
-                        </table>
-                        <hr>
-                        <div class="d-flex justify-content-between m-0 p-0">
-                            <p class="card-text text-muted CardPrice "data-form="heater_form5">₹869 /Seasonal</p>
-                            <p class="card-text text-muted"><i class="fa-solid fa-truck"></i> 3-5 days
-                                <span class="info-container">
-                                    <i class="fa-solid fa-circle-info info-icon"></i>
-                                    <span class="info-text">*Subject to profile verification. 90% profiles <br> get
-                                        verified within just 24 hours</span>
-                                </span>
-                            </p>
-                        </div>
-                        <!-- Book Now Buttons -->
-                        <div class="quick-view" data-bs-toggle="modal" data-bs-target="#bookingFormModal5">Book Now
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="card position-relative p-3 mt-4">
-                    <div class="top-card">
-                        <div class="img-container rounded">
-                            <!-- Default image -->
-                            <img src="assets/oil_Heater.jpg" class="card-img-top rounded" alt="Product Image">
-                            <!-- Hover image -->
-                            <img src="assets/Room Heater2.jpg" class="hover-image" alt="Hover Product Image">
-                            <div class="icon-container">
-                                <i class="fa-solid fa-heart"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Oil Room Heater Radiator </h5>
-                        <table class="table product-card-table">
-                            <thead>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="text-muted">Heater Type</td>
-                                    <td class="fw-bold">Oil Room Heater Radiator </td>
-                                </tr>
-                                <tr>
-                                    <td class="text-muted">Material</td>
-                                    <td class="fw-bold">Steel</td>
-                                </tr>
-                                <tr>
-                                    <td class="text-muted">Power Consumption</td>
-                                    <td class="fw-bold">Range: 800W to 2000W</td>
-                                </tr>
-
-                            </tbody>
-                        </table>
-                        <hr>
-                        <div class="d-flex justify-content-between m-0 p-0">
-                            <p class="card-text text-muted CardPrice "data-form="heater_form6">₹875 /Seasonal</p>
-                            <p class="card-text text-muted"><i class="fa-solid fa-truck"></i> 3-5 days
-                                <span class="info-container">
-                                    <i class="fa-solid fa-circle-info info-icon"></i>
-                                    <span class="info-text">*Subject to profile verification. 90% profiles <br> get
-                                        verified within just 24 hours</span>
-                                </span>
-                            </p>
-                        </div>
-                        <!-- Book Now Buttons -->
-                        <div class="quick-view" data-bs-toggle="modal" data-bs-target="#bookingFormModal6">Book Now
-                        </div>
-
+                
+                        <div class="quick-view mt-3" data-bs-toggle="modal" data-bs-target="#bookingFormModal4">Book Now</div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- -----------------------End All Acr---------------------------- -->
-    <!-- Modal Structure card-1 -->
-    <div class="modal fade" id="bookingFormModal1" data-form="heater_form1" tabindex="-1"
-        aria-labelledby="bookingFormModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title text-uppercase fw-bold" id="bookingFormModalLabel">Enquiry Now</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <!-- Form Content -->
-                    <form id="heaterform1">
-                        <input type="hidden" name="access_key" value="">
-                        <div class="row">
-                            <div class="form-group col-md-6 mb-2">
-                                <label class="text-dark" for="">Name</label>
-                                <input type="text" name="name" class="form-control" placeholder="Your Name">
-                            </div>
-                            <div class="form-group col-md-6 mb-2">
-                                <label class="text-dark" for="">Email</label>
-                                <input type="email" name="email" class="form-control" placeholder="Enter Email">
-                            </div>
+    <div class="modal fade" id="bookingFormModal4" data-form="form4" tabindex="-1"
+    aria-labelledby="bookingFormModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title text-uppercase fw-bold" id="bookingFormModalLabel">Enquiry Now</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Form Content -->
+                <form id="gesform1">
+                    <input type="hidden" name="access_key" value="">
+
+                    <div class="row">
+                        <div class="form-group col-md-4 col-6 mb-2">
+                            <label class="text-dark" for="">Name</label>
+                            <input type="text" name="name" class="form-control" placeholder="Your Name">
+                        </div>
+                        <div class="form-group col-md-4 col-6 mb-2">
+                            <label class="text-dark" for="">Email</label>
+                            <input type="email" name="email" class="form-control" placeholder="Enter Email">
+                        </div>
+                        <div class="form-group col-md-4 col-6 mb-2">
+                            <label class="text-dark">Phone Number</label>
+                            <input type="text" name="phone" class="form-control" placeholder="Phone Number"
+                                required>
+                        </div>
+                        <div class="form-group col-md-4 col-6 mb-2">
+                            <label class="text-dark">WhatsApp Number</label>
+                            <input type="text" name="whatsapp" class="form-control" placeholder="WhatsApp Number"
+                                required>
+                        </div>
+                        <div class="form-group col-md-4 mb-2">
+                            <label class="text-dark" for="">Address</label>
+                            <textarea name="Address" rows="3" class="form-control"
+                                placeholder="Your Address"></textarea>
+                        </div>
+                        <div class="form-group col-md-4 mb-2">
+                            <label class="text-dark" for="">Message</label>
+                            <textarea class="form-control" name="message" rows="3" placeholder="Message"></textarea>
                         </div>
 
-                        <div class="row">
-                            <div class="form-group col-md-6 mb-2">
-                                <label class="text-dark">Phone Number</label>
-                                <input type="text" name="phone" class="form-control" placeholder="Phone Number"
-                                    required>
-                            </div>
-                            <div class="form-group col-md-6 mb-2">
-                                <label class="text-dark">WhatsApp Number</label>
-                                <input type="text" name="whatsapp" class="form-control" placeholder="WhatsApp Number"
-                                    required>
-                            </div>
+                        <!-- Product Name -->
+                        <div class="form-group col-md-3 col-6 mb-2">
+                            <label class="text-dark">Product Name</label>
+                            <p class="fs-5 text-primary fw-bold" id="modal-product-name"></p>
+                            <input type="hidden" name="product_name" id="modal-product-name-input">
+                            <!-- Hidden Input -->
                         </div>
 
-                        <div class="row">
-                            <div class="form-group col-md-6 mb-2">
-                                <label class="text-dark" for="productRating">Product Variants</label>
-                                <select class="form-control" name="RentedProduct" id="productRating">
-                                    <option value="7" selected>7 Fin</option>
-                                    <option value="9">9 Fin</option>
-                                    <option value="11">11 Fin</option>
-                                    <option value="13">13 Fin</option>
-                                </select>
-                            </div>
-
-                            <div class="form-group col-md-6 mb-2">
-                                <label class="text-dark" for="duration">Duration</label>
-                                <select class="form-control" name="Duration" id="duration">
-                                    <option value="1">Full Season (Till Mar End)</option>
-                                </select>
-                            </div>
+                        <!-- Rating -->
+                        <div class="form-group col-md-3 col-6 mb-2">
+                            <label class="text-dark">Variants:</label>
+                            <select name="capacity" id="modal-rating" class="form-select">
+                                <option value="7Fin">7 FIN</option>
+                                <option value="9Fin">9 FIN</option>
+                                <option value="11Fin">11 FIN</option>
+                                <option value="13Fin">13 FIN</option>
+                            </select>
                         </div>
 
-                        <!-- Price Section -->
-                        <div class="row">
-                            <div class="form-group col-md-6 mb-2">
-                                <label class="text-dark" for="price">Price (in ₹)</label>
-                                <input type="text" name="Price" id="price2" class="form-control" readonly value="₹0">
-                            </div>
-                            <div class="form-group col-md-6 mb-2">
-                                <label class="text-dark" for="totalPrice">Total Price (in ₹) <span
-                                        class="fw-bold text-danger">Security Deposit ₹1500 extra</span></label>
-                                <input type="text" name="TotalPrice" id="totalPrice2" class="form-control" readonly
-                                    value="₹0">
-                            </div>
+                        <!-- Duration -->
+                        <div class="form-group col-md-3 col-6 mb-2">
+                            <label class="text-dark">Duration</label>
+                            <select id="modal-duration" name="duration" class="form-select">
+                                <option value="3">3 Months</option>
+                                <option value="4">4 Months</option>
+                                <option value="5">5 Months</option>
+                                <option value="6">6 Months</option>
+                                <option value="7">7 Months</option>
+                                <option value="8">8 Months</option>
+                                <option value="9">Annually</option>
+                            </select>
                         </div>
 
-
-                        <div class="row">
-                            <div class="form-group col-md-6 mb-2">
-                                <label class="text-dark" for="">Address</label>
-                                <textarea name="Address" rows="3" class="form-control"
-                                    placeholder="Your Address"></textarea>
-                            </div>
-                            <div class="form-group col-md-6 mb-2">
-                                <label class="text-dark" for="">Message</label>
-                                <textarea class="form-control" name="message" rows="3" placeholder="Message"></textarea>
-                            </div>
+                  
+                        <!-- Total Price -->
+                        <div class="form-group col-md-3 col-6 mb-2">
+                            <label class="fw-bold mt-3 text-dark">Total Price:
+                                <span class="fw-bold text-danger">Security Deposit ₹1000 extra</span>
+                            </label>
+                            <p class="fs-4 text-danger fw-bold">
+                                <span id="modal-total-price">₹8500</span> <!-- Displayed Price -->
+                            </p>
+                            <input type="hidden" name="price" id="modal-total-price-input">
+                            <!-- Hidden Input for Form -->
                         </div>
+                    </div>
 
-                        <div class="text-center">
-                            <button type="submit" name="btn" class="form_btn rounded">Submit</button>
-                        </div>
-                    </form>
-                </div>
+                    <div class="text-center">
+                        <button type="submit" name="btn" class="form_btn rounded">Submit</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
-      <!-- Modal Structure card-2 -->
-    <div class="modal fade" id="bookingFormModal2" data-form="heater_form2" tabindex="-1"
-        aria-labelledby="bookingFormModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title text-uppercase fw-bold" id="bookingFormModalLabel">Enquiry Now</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <!-- Form Content -->
-                    <form id="heaterform2">
-                        <input type="hidden" name="access_key" value="">
-                        <div class="row">
-                            <div class="form-group col-md-6 mb-2">
-                                <label class="text-dark" for="">Name</label>
-                                <input type="text" name="name" class="form-control" placeholder="Your Name">
-                            </div>
-                            <div class="form-group col-md-6 mb-2">
-                                <label class="text-dark" for="">Email</label>
-                                <input type="email" name="email" class="form-control" placeholder="Enter Email">
-                            </div>
-                        </div>
+</div>
 
-                        <div class="row">
-                            <div class="form-group col-md-6 mb-2">
-                                <label class="text-dark">Phone Number</label>
-                                <input type="text" name="phone" class="form-control" placeholder="Phone Number"
-                                    required>
-                            </div>
-                            <div class="form-group col-md-6 mb-2">
-                                <label class="text-dark">WhatsApp Number</label>
-                                <input type="text" name="whatsapp" class="form-control" placeholder="WhatsApp Number"
-                                    required>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="form-group col-md-6 mb-2">
-                                <label class="text-dark" for="productRating">Product Variants</label>
-                                <select class="form-control" name="RentedProduct" id="productRating">
-                                    <option value="7" selected>7 Fin</option>
-                                    <option value="9">9 Fin</option>
-                                    <option value="11">11 Fin</option>
-                                    <option value="13">13 Fin</option>
-                                </select>
-                            </div>
-
-                            <div class="form-group col-md-6 mb-2">
-                                <label class="text-dark" for="duration">Duration</label>
-                                <select class="form-control" name="Duration" id="duration">
-                                    <option value="1">Full Season (Till Mar End)</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <!-- Price Section -->
-                        <div class="row">
-                            <div class="form-group col-md-6 mb-2">
-                                <label class="text-dark" for="price">Price (in ₹)</label>
-                                <input type="text" name="Price" id="price2" class="form-control" readonly value="₹0">
-                            </div>
-                            <div class="form-group col-md-6 mb-2">
-                                <label class="text-dark" for="totalPrice">Total Price (in ₹) <span
-                                        class="fw-bold text-danger">Security Deposit ₹1500 extra</span></label>
-                                <input type="text" name="TotalPrice" id="totalPrice2" class="form-control" readonly
-                                    value="₹0">
-                            </div>
-                        </div>
-
-
-                        <div class="row">
-                            <div class="form-group col-md-6 mb-2">
-                                <label class="text-dark" for="">Address</label>
-                                <textarea name="Address" rows="3" class="form-control"
-                                    placeholder="Your Address"></textarea>
-                            </div>
-                            <div class="form-group col-md-6 mb-2">
-                                <label class="text-dark" for="">Message</label>
-                                <textarea class="form-control" name="message" rows="3" placeholder="Message"></textarea>
-                            </div>
-                        </div>
-
-                        <div class="text-center">
-                            <button type="submit"  name="btn" class="form_btn rounded">Submit</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-      <!-- Modal Structure card-3 -->
-    <div class="modal fade" id="bookingFormModal3" data-form="heater_form3" tabindex="-1"
-        aria-labelledby="bookingFormModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title text-uppercase fw-bold" id="bookingFormModalLabel">Enquiry Now</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <!-- Form Content -->
-                    <form id="heaterform3">
-                        <input type="hidden" name="access_key" value="">
-                        <div class="row">
-                            <div class="form-group col-md-6 mb-2">
-                                <label class="text-dark" for="">Name</label>
-                                <input type="text" name="name" class="form-control" placeholder="Your Name">
-                            </div>
-                            <div class="form-group col-md-6 mb-2">
-                                <label class="text-dark" for="">Email</label>
-                                <input type="email" name="email" class="form-control" placeholder="Enter Email">
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="form-group col-md-6 mb-2">
-                                <label class="text-dark">Phone Number</label>
-                                <input type="text" name="phone" class="form-control" placeholder="Phone Number"
-                                    required>
-                            </div>
-                            <div class="form-group col-md-6 mb-2">
-                                <label class="text-dark">WhatsApp Number</label>
-                                <input type="text" name="whatsapp" class="form-control" placeholder="WhatsApp Number"
-                                    required>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="form-group col-md-6 mb-2">
-                                <label class="text-dark" for="productRating">Product Variants</label>
-                                <select class="form-control" name="RentedProduct" id="productRating">
-                                    <option value="7" selected>7 Fin</option>
-                                    <option value="9">9 Fin</option>
-                                    <option value="11">11 Fin</option>
-                                    <option value="13">13 Fin</option>
-                                </select>
-                            </div>
-
-                            <div class="form-group col-md-6 mb-2">
-                                <label class="text-dark" for="duration">Duration</label>
-                                <select class="form-control" name="Duration" id="duration">
-                                    <option value="1">Full Season (Till Mar End)</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <!-- Price Section -->
-                        <div class="row">
-                            <div class="form-group col-md-6 mb-2">
-                                <label class="text-dark" for="price">Price (in ₹)</label>
-                                <input type="text" name="Price" id="price2" class="form-control" readonly value="₹0">
-                            </div>
-                            <div class="form-group col-md-6 mb-2">
-                                <label class="text-dark" for="totalPrice">Total Price (in ₹) <span
-                                        class="fw-bold text-danger">Security Deposit ₹1500 extra</span></label>
-                                <input type="text" name="TotalPrice" id="totalPrice2" class="form-control" readonly
-                                    value="₹0">
-                            </div>
-                        </div>
-
-
-                        <div class="row">
-                            <div class="form-group col-md-6 mb-2">
-                                <label class="text-dark" for="">Address</label>
-                                <textarea name="Address" rows="3" class="form-control"
-                                    placeholder="Your Address"></textarea>
-                            </div>
-                            <div class="form-group col-md-6 mb-2">
-                                <label class="text-dark" for="">Message</label>
-                                <textarea class="form-control" name="message" rows="3" placeholder="Message"></textarea>
-                            </div>
-                        </div>
-
-                        <div class="text-center">
-                            <button type="submit" name="btn" class="form_btn rounded">Submit</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-      <!-- Modal Structure card-4 -->
-    <div class="modal fade" id="bookingFormModal4" data-form="heater_form4" tabindex="-1"
-        aria-labelledby="bookingFormModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title text-uppercase fw-bold" id="bookingFormModalLabel">Enquiry Now</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <!-- Form Content -->
-                    <form id="heaterform4">
-                        <input type="hidden" name="access_key" value="">
-                        <div class="row">
-                            <div class="form-group col-md-6 mb-2">
-                                <label class="text-dark" for="">Name</label>
-                                <input type="text" name="name" class="form-control" placeholder="Your Name">
-                            </div>
-                            <div class="form-group col-md-6 mb-2">
-                                <label class="text-dark" for="">Email</label>
-                                <input type="email" name="email" class="form-control" placeholder="Enter Email">
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="form-group col-md-6 mb-2">
-                                <label class="text-dark">Phone Number</label>
-                                <input type="text" name="phone" class="form-control" placeholder="Phone Number"
-                                    required>
-                            </div>
-                            <div class="form-group col-md-6 mb-2">
-                                <label class="text-dark">WhatsApp Number</label>
-                                <input type="text" name="whatsapp" class="form-control" placeholder="WhatsApp Number"
-                                    required>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="form-group col-md-6 mb-2">
-                                <label class="text-dark" for="productRating">Product Variants</label>
-                                <select class="form-control" name="RentedProduct" id="productRating">
-                                    <option value="7" selected>7 Fin</option>
-                                    <option value="9">9 Fin</option>
-                                    <option value="11">11 Fin</option>
-                                    <option value="13">13 Fin</option>
-                                </select>
-                            </div>
-
-                            <div class="form-group col-md-6 mb-2">
-                                <label class="text-dark" for="duration">Duration</label>
-                                <select class="form-control" name="Duration" id="duration">
-                                    <option value="1">Full Season (Till Mar End)</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <!-- Price Section -->
-                        <div class="row">
-                            <div class="form-group col-md-6 mb-2">
-                                <label class="text-dark" for="price">Price (in ₹)</label>
-                                <input type="text" name="Price" id="price2" class="form-control" readonly value="₹0">
-                            </div>
-                            <div class="form-group col-md-6 mb-2">
-                                <label class="text-dark" for="totalPrice">Total Price (in ₹) <span
-                                        class="fw-bold text-danger">Security Deposit ₹1500 extra</span></label>
-                                <input type="text" name="TotalPrice" id="totalPrice2" class="form-control" readonly
-                                    value="₹0">
-                            </div>
-                        </div>
-
-
-                        <div class="row">
-                            <div class="form-group col-md-6 mb-2">
-                                <label class="text-dark" for="">Address</label>
-                                <textarea name="Address" rows="3" class="form-control"
-                                    placeholder="Your Address"></textarea>
-                            </div>
-                            <div class="form-group col-md-6 mb-2">
-                                <label class="text-dark" for="">Message</label>
-                                <textarea class="form-control" name="message" rows="3" placeholder="Message"></textarea>
-                            </div>
-                        </div>
-
-                        <div class="text-center">
-                            <button type="submit" name="btn" class="form_btn rounded">Submit</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-      <!-- Modal Structure card-5 -->
-    <div class="modal fade" id="bookingFormModal5" data-form="heater_form5" tabindex="-1"
-        aria-labelledby="bookingFormModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title text-uppercase fw-bold" id="bookingFormModalLabel">Enquiry Now</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <!-- Form Content -->
-                    <form id="heaterform5">
-                        <input type="hidden" name="access_key" value="">
-                        <div class="row">
-                            <div class="form-group col-md-6 mb-2">
-                                <label class="text-dark" for="">Name</label>
-                                <input type="text" name="name" class="form-control" placeholder="Your Name">
-                            </div>
-                            <div class="form-group col-md-6 mb-2">
-                                <label class="text-dark" for="">Email</label>
-                                <input type="email" name="email" class="form-control" placeholder="Enter Email">
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="form-group col-md-6 mb-2">
-                                <label class="text-dark">Phone Number</label>
-                                <input type="text" name="phone" class="form-control" placeholder="Phone Number"
-                                    required>
-                            </div>
-                            <div class="form-group col-md-6 mb-2">
-                                <label class="text-dark">WhatsApp Number</label>
-                                <input type="text" name="whatsapp" class="form-control" placeholder="WhatsApp Number"
-                                    required>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="form-group col-md-6 mb-2">
-                                <label class="text-dark" for="productRating">Product Variants</label>
-                                <select class="form-control" name="RentedProduct" id="productRating">
-                                    <option value="7" selected>7 Fin</option>
-                                    <option value="9">9 Fin</option>
-                                    <option value="11">11 Fin</option>
-                                    <option value="13">13 Fin</option>
-                                </select>
-                            </div>
-
-                            <div class="form-group col-md-6 mb-2">
-                                <label class="text-dark" for="duration">Duration</label>
-                                <select class="form-control" name="Duration" id="duration">
-                                    <option value="1">Full Season (Till Mar End)</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <!-- Price Section -->
-                        <div class="row">
-                            <div class="form-group col-md-6 mb-2">
-                                <label class="text-dark" for="price">Price (in ₹)</label>
-                                <input type="text" name="Price" id="price2" class="form-control" readonly value="₹0">
-                            </div>
-                            <div class="form-group col-md-6 mb-2">
-                                <label class="text-dark" for="totalPrice">Total Price (in ₹) <span
-                                        class="fw-bold text-danger">Security Deposit ₹1500 extra</span></label>
-                                <input type="text" name="TotalPrice" id="totalPrice2" class="form-control" readonly
-                                    value="₹0">
-                            </div>
-                        </div>
-
-
-                        <div class="row">
-                            <div class="form-group col-md-6 mb-2">
-                                <label class="text-dark" for="">Address</label>
-                                <textarea name="Address" rows="3" class="form-control"
-                                    placeholder="Your Address"></textarea>
-                            </div>
-                            <div class="form-group col-md-6 mb-2">
-                                <label class="text-dark" for="">Message</label>
-                                <textarea class="form-control" name="message" rows="3" placeholder="Message"></textarea>
-                            </div>
-                        </div>
-
-                        <div class="text-center">
-                            <button type="submit" name="btn" class="form_btn rounded">Submit</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-        <!-- Modal Structure card-6 -->
-        <div class="modal fade" id="bookingFormModal6" data-form="heater_form6" tabindex="-1"
-        aria-labelledby="bookingFormModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title text-uppercase fw-bold" id="bookingFormModalLabel">Enquiry Now</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <!-- Form Content -->
-                    <form id="heaterform6">
-                        <input type="hidden" name="access_key" value="">
-                        <div class="row">
-                            <div class="form-group col-md-6 mb-2">
-                                <label class="text-dark" for="">Name</label>
-                                <input type="text" name="name" class="form-control" placeholder="Your Name">
-                            </div>
-                            <div class="form-group col-md-6 mb-2">
-                                <label class="text-dark" for="">Email</label>
-                                <input type="email" name="email" class="form-control" placeholder="Enter Email">
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="form-group col-md-6 mb-2">
-                                <label class="text-dark">Phone Number</label>
-                                <input type="text" name="phone" class="form-control" placeholder="Phone Number"
-                                    required>
-                            </div>
-                            <div class="form-group col-md-6 mb-2">
-                                <label class="text-dark">WhatsApp Number</label>
-                                <input type="text" name="whatsapp" class="form-control" placeholder="WhatsApp Number"
-                                    required>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="form-group col-md-6 mb-2">
-                                <label class="text-dark" for="productRating">Product Variants</label>
-                                <select class="form-control" name="RentedProduct" id="productRating">
-                                    <option value="7" selected>7 Fin</option>
-                                    <option value="9">9 Fin</option>
-                                    <option value="11">11 Fin</option>
-                                    <option value="13">13 Fin</option>
-                                </select>
-                            </div>
-
-                            <div class="form-group col-md-6 mb-2">
-                                <label class="text-dark" for="duration">Duration</label>
-                                <select class="form-control" name="Duration" id="duration">
-                                    <option value="1">Full Season (Till Mar End)</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <!-- Price Section -->
-                        <div class="row">
-                            <div class="form-group col-md-6 mb-2">
-                                <label class="text-dark" for="price">Price (in ₹)</label>
-                                <input type="text" name="Price" id="price2" class="form-control" readonly value="₹0">
-                            </div>
-                            <div class="form-group col-md-6 mb-2">
-                                <label class="text-dark" for="totalPrice">Total Price (in ₹) <span
-                                        class="fw-bold text-danger">Security Deposit ₹1500 extra</span></label>
-                                <input type="text" name="TotalPrice" id="totalPrice2" class="form-control" readonly
-                                    value="₹0">
-                            </div>
-                        </div>
-
-
-                        <div class="row">
-                            <div class="form-group col-md-6 mb-2">
-                                <label class="text-dark" for="">Address</label>
-                                <textarea name="Address" rows="3" class="form-control"
-                                    placeholder="Your Address"></textarea>
-                            </div>
-                            <div class="form-group col-md-6 mb-2">
-                                <label class="text-dark" for="">Message</label>
-                                <textarea class="form-control" name="message" rows="3" placeholder="Message"></textarea>
-                            </div>
-                        </div>
-
-                        <div class="text-center">
-                            <button type="submit" name="btn" class="form_btn rounded">Submit</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-  
     <!-- -----------------------Start Terms Condition---------------------------- -->
     <div class="container-fluid p-4">
         <div class="row">
@@ -1307,6 +604,65 @@
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide/dist/js/splide.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+         // सभी "Book Now" बटन को सेलेक्ट करें
+         const bookNowButtons = document.querySelectorAll(".quick-view");
+     
+         bookNowButtons.forEach(button => {
+             button.addEventListener("click", function () {
+                 // कार्ड को पहचानें
+                 const card = this.closest(".card");
+     
+                 // कार्ड से डेटा प्राप्त करें
+                 const productName = card.querySelector(".card-title").innerText;
+                 const capacity = card.querySelector("#capacity").value;  // सही ID use करें
+                 const duration = card.querySelector("#duration").value;
+                 
+                 // कीमत प्राप्त करें और ₹1000 जोड़ें
+                 let price = parseInt(card.querySelector("#price").innerText.replace("₹", "").trim());
+                 let finalPrice = price + 1000;  // ₹1000 जोड़ें
+     
+                 // फॉर्म में डेटा अपडेट करें
+                 document.getElementById("modal-product-name").innerText = productName;
+                 document.getElementById("modal-product-name-input").value = productName;
+                 document.getElementById("modal-rating").value = capacity;
+                 document.getElementById("modal-duration").value = duration;
+                 document.getElementById("modal-total-price").innerText = `₹${finalPrice}`;
+                 document.getElementById("modal-total-price-input").value = finalPrice;
+             });
+         });
+     });
+     
+       // Price Table
+       const priceTable = {
+             "7Fin": { "3": 4500, "4": 5000, "5": 5500, "6": 6000, "7": 6500, "8": 7000, "9": 7500 },
+             "9Fin": { "3": 5000, "4": 5500, "5": 6000, "6": 6500, "7": 7000, "8": 7500, "9": 8000 },
+             "11Fin": { "3": 5500, "4": 6000, "5": 6500, "6": 7000, "7": 7500, "8": 8000, "9": 8500 },
+             "13Fin": { "3": 5500, "4": 6000, "5": 6500, "6": 7000, "7": 7500, "8": 8000, "9": 8500 }
+         };
+     
+         // Elements
+         const capacitySelect = document.getElementById("capacity");
+         const durationSelect = document.getElementById("duration");
+         const priceDisplay = document.getElementById("price");
+     
+         // Function to update price
+         function updatePrice() {
+             const capacity = capacitySelect.value;
+             const duration = durationSelect.value;
+             const price = priceTable[capacity][duration];
+     
+             priceDisplay.textContent = `₹${price}`;
+         }
+     
+         // Event Listeners
+         capacitySelect.addEventListener("change", updatePrice);
+         durationSelect.addEventListener("change", updatePrice);
+     
+         // Initialize Price on Load
+         updatePrice();
+         </script>
 </body>
 
 </html>
