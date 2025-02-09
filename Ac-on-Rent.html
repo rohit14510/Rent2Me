@@ -283,7 +283,7 @@
     </div>
     <!-- -----------------------End All Acr---------------------------- -->
     <!-- Modal Structure card-1 Window AC-->
-    <div class="modal fade" id="bookingFormModal1" data-form="form1" tabindex="-1"
+    <div class="modal fade modal1" id="bookingFormModal1" data-form="form1" tabindex="-1"
     aria-labelledby="bookingFormModalLabel" aria-hidden="true">
 <div class="modal-dialog modal-dialog-centered modal-lg">
     <div class="modal-content">
@@ -332,7 +332,7 @@
                     <!-- Rating -->
                     <div class="form-group col-md-3 col-6 mb-2">
                         <label class="text-dark">Rating</label>
-                        <select name="rating" id="modal-rating" class="form-select">
+                        <select name="rating" id="modal-rating" class="form-select rating-dropdown">
                             <option value="3">3 Star</option>
                             <option value="4">4 Star</option>
                             <option value="5">5 Star</option>
@@ -342,7 +342,7 @@
                     <!-- Duration -->
                     <div class="form-group col-md-3 col-6 mb-2">
                         <label class="text-dark">Duration</label>
-                        <select id="modal-duration" name="duration" class="form-select" >
+                        <select id="modal-duration" name="duration" class="form-select duration-dropdown" >
                             <option value="3">3 Months</option>
                             <option value="4">4 Months</option>
                             <option value="5">5 Months</option>
@@ -356,10 +356,11 @@
                     <!-- Capacity -->
                     <div class="form-group col-md-3 col-6 mb-2">
                         <label class="text-dark">Capacity</label>
-                        <select id="modal-capacity" name="capacity" class="form-select" >
+                        <select id="modal-capacity" name="capacity" class="form-select capacity-dropdown" >
                             <option value="1ton">1 Ton</option>
-                            <option value="2ton">2 Ton</option>
                             <option value="1.5ton">1.5 Ton</option>
+                            <option value="2ton">2 Ton</option>
+                           
                         </select>
                     </div>
 
@@ -369,9 +370,9 @@
                             <span class="fw-bold text-danger">Rent + security deposit 1100/- =</span>
                         </label>
                         <p class="fs-4 text-danger fw-bold">
-                            <span id="modal-total-price">₹8500</span> <!-- Displayed Price -->
+                            <span id="modal-total-price" class="price-display">₹8500</span> <!-- Displayed Price -->
                         </p>
-                        <input type="hidden" name="price" id="modal-total-price-input"> <!-- Hidden Input for Form -->
+                        <input type="hidden" name="price" id="modal-total-price-input" class="price-display-input"> <!-- Hidden Input for Form -->
                     </div>
                 </div>
 
@@ -385,7 +386,7 @@
 </div>
 
         <!-- Modal Structure card-2 Split AC-->
-        <div class="modal fade" id="bookingFormModal2" data-form="form2" tabindex="-1"
+        <div class="modal fade modal1"  id="bookingFormModal2" data-form="form2" tabindex="-1"
         aria-labelledby="bookingFormModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
@@ -434,7 +435,7 @@
 
                             <div class="form-group col-md-3 col-6 mb-2">
                                 <label class="text-dark">Rating</label>
-                                <select id="modal-rating" name="rating" class="form-select">
+                                <select id="modal-rating" name="rating" class="form-select rating-dropdown">
                                     <option value="3">3 Star</option>
                                     <option value="4">4 Star</option>
                                     <option value="5">5 Star</option>
@@ -444,7 +445,7 @@
 
                                 <label class="text-dark">Duration</label>
                                 <!-- Modal में भी सही options दें -->
-                                <select id="modal-duration" name="duration" class="form-select">
+                                <select id="modal-duration"  name="duration" class="form-select duration-dropdown">
                                     <option value="3">3 Months</option>
                                     <option value="4">4 Months</option>
                                     <option value="5">5 Months</option>
@@ -456,10 +457,11 @@
                             </div>
                             <div class="form-group col-md-3 col- mb-2">
                                 <label class="text-dark">Capacity</label>
-                                <select id="modal-capacity" name="capacity" class="form-select">
+                                <select id="modal-capacity"   name="capacity" class="form-select capacity-dropdown">
                                     <option value="1ton">1 Ton</option>
-                                    <option value="2ton">2 Ton</option>
                                     <option value="1.5ton">1.5 Ton</option>
+                                    <option value="2ton">2 Ton</option>
+                                    
                                 </select>
                             </div>
                            
@@ -469,9 +471,9 @@
                             <span class="fw-bold text-danger">Rent + security deposit 1100/- =</span>
                         </label>
                         <p class="fs-4 text-danger fw-bold">
-                            <span id="modal-total-price">₹8500</span> <!-- Displayed Price -->
+                            <span id="modal-total-price" class="price-display" >₹8500</span> <!-- Displayed Price -->
                         </p>
-                        <input type="hidden" name="price" id="modal-total-price-input"> <!-- Hidden Input for Form -->
+                        <input type="hidden" name="price" id="modal-total-price-input" class="price-display-input" > <!-- Hidden Input for Form -->
                     </div>
                         </div>
                         <div class="text-center">
@@ -1155,7 +1157,126 @@ document.addEventListener("DOMContentLoaded", function () {
       });
   });
 });
-    </script>
+   
+   
+   // Extra code 
+
+//    document.addEventListener("DOMContentLoaded", function () {
+//     // Elements
+//     let ratingSelect = document.getElementById("modal-rating");
+//     let durationSelect = document.getElementById("modal-duration");
+//     let capacitySelect = document.getElementById("modal-capacity");
+//     let totalPriceElement = document.getElementById("modal-total-price");
+//     let totalPriceInput = document.getElementById("modal-total-price-input");
+
+//     // Extra Charge
+//     let extraCharge = 1100;
+
+//     // Price Data Table
+//     const priceTable = [
+//         { // Window AC
+//             "1ton": { "3": { "3": 7500, "4": 8500, "5": 9500 }, "4": { "3": 8500, "4": 9500, "5": 10500 }, "5": { "3": 9500, "4": 10250, "5": 10500 }, "6": { "3": 10000, "4": 10500, "5": 10750 }, "7": { "3": 10500, "4": 10750, "5": 11000 }, "8": { "3": 10650, "4": 10850, "5": 11250 }, "9": { "3": 11000, "4": 11500, "5": 12000 }},
+//             "1.5ton": { "3": { "3": 7700, "4": 8700, "5": 9700 }, "4": { "3": 8700, "4": 9700, "5": 10700 }, "5": { "3": 9700, "4": 10450, "5": 10700 }, "6": { "3": 10200, "4": 10700, "5": 10950 }, "7": { "3": 10700, "4": 10950, "5": 11200 }, "8": { "3": 10850, "4": 11050, "5": 11450 }, "9": { "3": 11200, "4": 11700, "5": 12200 }},
+//             "2ton": { "3": { "3": 8200, "4": 9200, "5": 10200 }, "4": { "3": 9200, "4": 10200, "5": 11200 }, "5": { "3": 10200, "4": 10950, "5": 11200 }, "6": { "3": 10700, "4": 11200, "5": 11450 }, "7": { "3": 11200, "4": 11450, "5": 11700 }, "8": { "3": 11350, "4": 11550, "5": 11950 }, "9": { "3": 11700, "4": 12200, "5": 12700 }},
+//         },
+//         { // Split AC
+//             "1ton": { "3": { "3": 10500, "4": 11500, "5": 12500 }, "4": { "3": 11500, "4": 12500, "5": 13500 }, "5": { "3": 12500, "4": 13250, "5": 13500 }, "6": { "3": 13000, "4": 13500, "5": 13750 }, "7": { "3": 13500, "4": 13750, "5": 14000 }, "8": { "3": 13650, "4": 13850, "5": 14250 }, "9": { "3": 14000, "4": 14500, "5": 14700 }},
+//             "1.5ton": { "3": { "3": 10700, "4": 11700, "5": 12700 }, "4": { "3": 11700, "4": 12700, "5": 13700 }, "5": { "3": 12700, "4": 13450, "5": 13700 }, "6": { "3": 13200, "4": 13700, "5": 13950 }, "7": { "3": 13700, "4": 13950, "5": 14200 }, "8": { "3": 13850, "4": 14050, "5": 14450 }, "9": { "3": 14200, "4": 14700, "5": 15200 }},
+//             "2ton": { "3": { "3": 11200, "4": 12200, "5": 13200 }, "4": { "3": 12200, "4": 13200, "5": 14200 }, "5": { "3": 13200, "4": 13950, "5": 14200 }, "6": { "3": 13700, "4": 14200, "5": 14450 }, "7": { "3": 14200, "4": 14450, "5": 14700 }, "8": { "3": 14350, "4": 14550, "5": 14950 }, "9": { "3": 14700, "4": 15200, "5": 15700 }},
+//         },
+//     ];
+
+//     // Default Product Type (Window AC by default)
+//     let selectedProductIndex = 0; 
+
+//     // Function to Update Price
+//     function updatePrice() {
+//         let capacity = capacitySelect.value;
+//         let duration = durationSelect.value;
+//         let rating = ratingSelect.value;
+
+//         if (priceTable[selectedProductIndex][capacity] &&
+//             priceTable[selectedProductIndex][capacity][duration] &&
+//             priceTable[selectedProductIndex][capacity][duration][rating]) {
+                
+//             let basePrice = priceTable[selectedProductIndex][capacity][duration][rating];
+
+//             // Extra ₹1100 जोड़ना
+//             let finalPrice = basePrice + extraCharge;
+
+//             // Update Total Price
+//             totalPriceElement.innerText = `₹${finalPrice}`;
+//             totalPriceInput.value = finalPrice;
+//         }
+//     }
+
+//     // Event Listeners
+//     ratingSelect.addEventListener("change", updatePrice);
+//     durationSelect.addEventListener("change", updatePrice);
+//     capacitySelect.addEventListener("change", updatePrice);
+
+//     // Function to Change Product Type (Window AC / Split AC)
+//     function setProductType(productIndex) {
+//         selectedProductIndex = productIndex;
+//         updatePrice();
+//     }
+
+//     // Example Usage: If user selects Split AC, call `setProductType(1)`
+// });
+
+
+
+////////////////////////
+document.addEventListener("DOMContentLoaded", function () {
+    // Extra Charge
+    const extraCharge = 1100;
+
+    // Price Data Table for Multiple Cards
+    const priceTables = [
+        { // First Card (Window AC)
+            "1ton": { "3": { "3": 7500, "4": 8500, "5": 9500 }, "4": { "3": 8500, "4": 9500, "5": 10500 }, "5": { "3": 9500, "4": 10250, "5": 10500 }, "6": { "3": 10000, "4": 10500, "5": 10750 }, "7": { "3": 10500, "4": 10750, "5": 11000 }, "8": { "3": 10650, "4": 10850, "5": 11250 }, "9": { "3": 11000, "4": 11500, "5": 12000 } },
+            "1.5ton": { "3": { "3": 7700, "4": 8700, "5": 9700 }, "4": { "3": 8700, "4": 9700, "5": 10700 }, "5": { "3": 9700, "4": 10450, "5": 10700 }, "6": { "3": 10200, "4": 10700, "5": 10950 }, "7": { "3": 10700, "4": 10950, "5": 11200 }, "8": { "3": 10850, "4": 11050, "5": 11450 }, "9": { "3": 11200, "4": 11700, "5": 12200 } },
+            "2ton": { "3": { "3": 8200, "4": 9200, "5": 10200 }, "4": { "3": 9200, "4": 10200, "5": 11200 }, "5": { "3": 10200, "4": 10950, "5": 11200 }, "6": { "3": 10700, "4": 11200, "5": 11450 }, "7": { "3": 11200, "4": 11450, "5": 11700 }, "8": { "3": 11350, "4": 11550, "5": 11950 }, "9": { "3": 11700, "4": 12200, "5": 12700 } }
+        },
+        { // Second Card (Split AC)
+            "1ton": { "3": { "3": 10500, "4": 11500, "5": 12500 }, "4": { "3": 11500, "4": 12500, "5": 13500 }, "5": { "3": 12500, "4": 13250, "5": 13500 }, "6": { "3": 13000, "4": 13500, "5": 13750 }, "7": { "3": 13500, "4": 13750, "5": 14000 }, "8": { "3": 13650, "4": 13850, "5": 14250 }, "9": { "3": 14000, "4": 14500, "5": 14700 } },
+            "1.5ton": { "3": { "3": 10700, "4": 11700, "5": 12700 }, "4": { "3": 11700, "4": 12700, "5": 13700 }, "5": { "3": 12700, "4": 13450, "5": 13700 }, "6": { "3": 13200, "4": 13700, "5": 13950 }, "7": { "3": 13700, "4": 13950, "5": 14200 }, "8": { "3": 13850, "4": 14050, "5": 14450 }, "9": { "3": 14200, "4": 14700, "5": 15200 } },
+            "2ton": { "3": { "3": 11200, "4": 12200, "5": 13200 }, "4": { "3": 12200, "4": 13200, "5": 14200 }, "5": { "3": 13200, "4": 13950, "5": 14200 }, "6": { "3": 13700, "4": 14200, "5": 14450 }, "7": { "3": 14200, "4": 14450, "5": 14700 }, "8": { "3": 14350, "4": 14550, "5": 14950 }, "9": { "3": 14700, "4": 15200, "5": 15700 } }
+        }
+    ];
+
+    // सभी मॉडलों को सेलेक्ट करें
+    document.querySelectorAll(".modal1").forEach((modal1, index) => {
+        const ratingSelect = modal1.querySelector(".rating-dropdown");
+        const durationSelect = modal1.querySelector(".duration-dropdown");
+        const capacitySelect = modal1.querySelector(".capacity-dropdown");
+        const totalPriceElement = modal1.querySelector(".price-display");
+        const totalPriceInput = modal1.querySelector(".price-display-input");
+
+        function updateTotalPrice() {
+            const rating = ratingSelect.value;
+            const duration = durationSelect.value;
+            const capacity = capacitySelect.value;
+            const priceTable = priceTables[index];
+
+            if (priceTable[capacity] && priceTable[capacity][duration] && priceTable[capacity][duration][rating]) {
+                let totalPrice = priceTable[capacity][duration][rating] + extraCharge;
+                totalPriceElement.textContent = `₹${totalPrice}`;
+                totalPriceInput.value = totalPrice;
+            }
+        }
+
+        // इवेंट लिसनर्स जोड़ें
+        ratingSelect.addEventListener("change", updateTotalPrice);
+        durationSelect.addEventListener("change", updateTotalPrice);
+        capacitySelect.addEventListener("change", updateTotalPrice);
+
+        // पेज लोड पर इनिशियल प्राइस सेट करें
+        updateTotalPrice();
+    });
+});
+
+ </script>
 
 </body>
 

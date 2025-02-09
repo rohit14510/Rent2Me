@@ -69,7 +69,7 @@ window.addEventListener("click", (event) => {
 });
 
 let url =
-  "https://script.google.com/macros/s/AKfycbzgTw9iVoEkmoGtp_B86Cx4ZB6GlPAZC8rO0wQUwkvn_J_GxtRBJeLE5Inc9iz4M-Y7/exec";
+  "https://script.google.com/macros/s/AKfycbyHP4s82qhHAsMiZ8k7fUYlCMX_K5JSgWRW_AS4FJIG8Ybdhz8sfIV2nZdtewYxocaH/exec";
 
 // Form IDs ka array banaye
 let formIds = [
