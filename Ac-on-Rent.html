@@ -85,16 +85,18 @@
     </div>
     <!-- ---------------Enq--------------- -->
     <button id="complaintBtn">Raise Complaint</button>
-
     <div id="enquiryForm">
-        <h3>Enquiry Form</h3>
+      <h3>Enquiry Form</h3>
+      <form id="form" action="https://api.web3forms.com/submit" method="POST"> 
+        <input type="hidden" name="access_key" value="8a75c0d2-6689-4a3f-82af-49f90a8e8ff5">
         <label for="">Name</label>
-        <input type="text" placeholder="Your Name" required>
+        <input type="text" name="Name" placeholder="Your Name" required>
         <label for="">Email</label>
-        <input type="email" placeholder="Your Email" required>
+        <input type="email" name="Email" placeholder="Your Email" required>
         <label for="">Complaint</label>
-        <textarea placeholder="Your Complaint" rows="4" required></textarea>
+        <textarea name="Complaint" placeholder="Your Complaint" rows="4" required></textarea>
         <button type="submit">Submit</button>
+    </form>
     </div>
     <!-- --------------------START HERO - SECTION---------------------- -->
     <div class="conatiner-fluid">
