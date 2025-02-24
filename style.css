@@ -154,7 +154,7 @@ header {
   position: fixed;
   width: 60px;
   height: 60px;
-  right: 18px;
+  left: 18px;
   color: #fff;
   border-radius: 50px;
   text-align: center;
@@ -192,7 +192,7 @@ header {
   #complaintBtn {
     position: fixed;
     right: 0;
-    top: 50%;
+    top: 75%;
     transform: translateY(-50%);
     background-color: #EF7F1A;
     color: white;
@@ -211,6 +211,28 @@ header {
     background-color: #00194D;
   }
 
+    /* Floating Button */
+    #returnProductBtn {
+      position: fixed;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: #00194D;
+      color: white;
+      padding: 10px;
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+      border: none;
+      border-radius: 8px 0 0 8px;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: background-color 0.3s;
+      z-index: 1000;
+    }
+  
+    #returnProductBtn:hover {
+      background-color: #EF7F1A;
+    }
   /* Popup Form */
   #enquiryForm {
     display: none;
@@ -256,7 +278,51 @@ header {
   #enquiryForm button:hover {
     background-color: #EF7F1A;
   }
+  /* Popup Form */
+  #returnForm {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 2px solid #00194D;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 1000;
+    width: 90%;
+    max-width: 400px;
+    box-sizing: border-box;
+    z-index: 10000;
+  }
 
+  #returnForm h3 {
+    margin-top: 0;
+  }
+
+  #returnForm input, #returnForm textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  #returnForm button {
+    background-color: #00194D;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  #returnForm button:hover {
+    background-color: #EF7F1A;
+  }
   /* Responsive Design */
   @media (max-width: 480px) {
     #complaintBtn {

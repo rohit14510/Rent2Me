@@ -67,6 +67,22 @@ window.addEventListener("click", (event) => {
     enquiryForm.style.display = "none";
   }
 });
+// Return Product
+
+const returnProductBtn = document.getElementById("returnProductBtn");
+const returnForm = document.getElementById("returnForm");
+
+returnProductBtn.addEventListener("click", () => {
+  returnForm.style.display =
+  returnForm.style.display === "block" ? "none" : "block";
+});
+
+// Close form when clicking outside
+window.addEventListener("click", (event) => {
+  if (event.target !== returnProductBtn && !returnForm.contains(event.target)) {
+    returnForm.style.display = "none";
+  }
+});
 
 let url =
   "https://script.google.com/macros/s/AKfycbyHP4s82qhHAsMiZ8k7fUYlCMX_K5JSgWRW_AS4FJIG8Ybdhz8sfIV2nZdtewYxocaH/exec";
