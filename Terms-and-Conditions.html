@@ -37,23 +37,17 @@
             <nav class="nav-links">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
+                 
                     <li class="dropdown">
                         <a class="sercolor" href="Ac-on-Rent.html">Ac on Rent </a>
-                        <!-- <ul class="dropdown-menu">
-                            <li><a href="HouseholdShifting.html">Household Shifting Service</a></li>
-                            <li><a href="OfficeRelocation.html">Office Relocation Service</a></li>
-                            <li><a href="CarTransportationServices.html">Car transportation Service</a></li>
-                            <li><a href="BikeShiftingService.html">Bike Shifting Service</a></li>
-                            <li><a href="CommercialLogistics.html">Commercial Logistics Service</a></li>
-                            <li><a href="HouseholdWarehouseStorage.html">Household Warehouse Storage Service</a></li>
-    
-    
-                        </ul> -->
                     </li>
                     <li><a href="Oil-Heater-on-Rent.html">Oil Heater on Rent </a></li>
                     <li><a href="Geyser-on-Rent.html">Geyser on Rent </a></li>
                     <li><a href="Old-Ac-Buying.html">Old Ac Buying </a></li>
+                    <li class="d-lg-none d-block"><a href="#" class="open-form" data-target="mobileenquiryForm">Raise Complaint</a></li>
+                    <li class="d-lg-none d-block"><a href="#" class="open-form" data-target="mobilereturnForm">Return Product</a></li>
+                    <li class="d-lg-none d-block"><a href="#" class="open-form" data-target="mobilemaintenanceForm">Maintenance Care</a></li>          
+                    <li><a href="about.html">About</a></li>
                 </ul>
             </nav>
         </div>
@@ -61,6 +55,86 @@
             <span>&#9776;</span>
         </div>
     </header>
+    <!-- -----------Mobile View Form------------ -->
+    <div id="mobileenquiryForm" class="mobileform">
+        <h3>Enquiry Form</h3>
+        <form id="form" action="https://api.web3forms.com/submit" method="POST"> 
+          <input type="hidden" name="access_key" value="8a75c0d2-6689-4a3f-82af-49f90a8e8ff5">
+          <label for="">Name</label>
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <label for="">Email</label>
+          <input type="email" name="Email" placeholder="Your Email" required>
+          <label for="">Complaint</label>
+          <textarea name="Complaint" placeholder="Your Complaint" rows="4" required></textarea>
+          <button type="submit">Submit</button>
+      </form>
+      </div>
+      <div id="mobilereturnForm" class="mobileform">
+        <h3>Return Product Form</h3>
+        <form id="form" action="https://api.web3forms.com/submit" method="POST"> 
+          <input type="hidden" name="access_key" value="8a75c0d2-6689-4a3f-82af-49f90a8e8ff5">
+         <div class="row">
+          <div class="col-6">
+              <label for="">Name</label>
+          <input type="text" name="Name" placeholder="Your Name" required>
+          </div>
+          <div class="col-6">
+              <label for="">Email</label>
+              <input type="email" name="Email" placeholder="Your Email" required>
+          </div>
+          <div class="col-6">
+              <label for="">Product Name</label>
+              <input type="text" name="Product Name" placeholder="Product Name" required>
+          </div>
+          <div class="col-6">
+              <label for="">Pickup Date</label>
+              <input type="date" name="Pickup Date" placeholder="Pickup Date" required>
+          </div>
+          <div class="col-6">
+              <label for="">Address</label>
+              <textarea name="Address" placeholder="Your Address" rows="3" required></textarea>
+          </div>
+          <div class="col-6">
+              <label for="">Messsage</label>
+              <textarea name="Message" placeholder="Your Message" rows="3" required></textarea>
+          </div>
+          <button type="submit">Submit</button>
+         </div>
+      </form>
+      </div>
+      <div id="mobilemaintenanceForm"class="mobileform">
+        <h3>Maintenance care Form</h3>
+        <form id="form" action="https://api.web3forms.com/submit" method="POST"> 
+          <input type="hidden" name="access_key" value="8a75c0d2-6689-4a3f-82af-49f90a8e8ff5">
+         <div class="row">
+          <div class="col-6">
+              <label for="">Name</label>
+          <input type="text" name="Name" placeholder="Your Name" required>
+          </div>
+          <div class="col-6">
+              <label for="">Email</label>
+              <input type="email" name="Email" placeholder="Your Email" required>
+          </div>
+          <div class="col-6">
+              <label for="">Product Name</label>
+              <input type="text" name="Product Name" placeholder="Product Name" required>
+          </div>
+          <div class="col-6">
+              <label for="">Scheduled Date</label>
+              <input type="date" name="Scheduled Date" placeholder="Scheduled Date" required>
+          </div>
+          <div class="col-6">
+              <label for="">Address</label>
+              <textarea name="Address" placeholder="Your Address" rows="3" required></textarea>
+          </div>
+          <div class="col-6">
+              <label for="">Messsage</label>
+              <textarea name="Message" placeholder="Your Message" rows="3" required></textarea>
+          </div>
+          <button type="submit">Submit</button>
+         </div>
+      </form>
+      </div>
     <!-- -------Call And Whatsapp Button------- -->
     <div class="quick_contact">
         <a href="https://api.whatsapp.com/send?phone=918800120156&text=hello" class="qwhtsapp" target="_blank">
@@ -84,7 +158,8 @@
        
     </div>
 <!-- ---------------Enq--------------- -->
-<button id="complaintBtn">Raise Complaint</button>
+<div class="">
+    <button id="complaintBtn" class="d-lg-block d-none">Raise Complaint</button>
 <div id="enquiryForm">
   <h3>Enquiry Form</h3>
   <form id="form" action="https://api.web3forms.com/submit" method="POST"> 
@@ -98,8 +173,10 @@
     <button type="submit">Submit</button>
 </form>
 </div>
+</div>
 <!-- ---------------Product--------------- -->
-<button id="returnProductBtn">Return Product</button>
+<div >
+    <button id="returnProductBtn" class="d-none d-lg-block">Return Product</button>
 <div id="returnForm">
   <h3>Return Product Form</h3>
   <form id="form" action="https://api.web3forms.com/submit" method="POST"> 
@@ -132,6 +209,44 @@
     <button type="submit">Submit</button>
    </div>
 </form>
+</div>
+</div>
+<!-- ---------------Maintanence--------------- -->
+<div >
+    <button id="maintenanceBtn"class="d-none d-lg-block">Maintenance care</button>
+<div id="maintenanceForm">
+  <h3>Maintenance care Form</h3>
+  <form id="form" action="https://api.web3forms.com/submit" method="POST"> 
+    <input type="hidden" name="access_key" value="8a75c0d2-6689-4a3f-82af-49f90a8e8ff5">
+   <div class="row">
+    <div class="col-6">
+        <label for="">Name</label>
+    <input type="text" name="Name" placeholder="Your Name" required>
+    </div>
+    <div class="col-6">
+        <label for="">Email</label>
+        <input type="email" name="Email" placeholder="Your Email" required>
+    </div>
+    <div class="col-6">
+        <label for="">Product Name</label>
+        <input type="text" name="Product Name" placeholder="Product Name" required>
+    </div>
+    <div class="col-6">
+        <label for="">Scheduled Date</label>
+        <input type="date" name="Scheduled Date" placeholder="Scheduled Date" required>
+    </div>
+    <div class="col-6">
+        <label for="">Address</label>
+        <textarea name="Address" placeholder="Your Address" rows="3" required></textarea>
+    </div>
+    <div class="col-6">
+        <label for="">Messsage</label>
+        <textarea name="Message" placeholder="Your Message" rows="3" required></textarea>
+    </div>
+    <button type="submit">Submit</button>
+   </div>
+</form>
+</div>
 </div>
     <!-- --------------------START HERO - SECTION---------------------- -->
     <div class="conatiner-fluid">

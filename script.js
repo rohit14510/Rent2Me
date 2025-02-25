@@ -84,6 +84,61 @@ window.addEventListener("click", (event) => {
   }
 });
 
+//maintenance care
+const maintenanceBtn = document.getElementById("maintenanceBtn");
+const maintenanceForm = document.getElementById("maintenanceForm");
+
+maintenanceBtn.addEventListener("click", () => {
+  maintenanceForm.style.display =
+  maintenanceForm.style.display === "block" ? "none" : "block";
+});
+
+// Close form when clicking outside
+window.addEventListener("click", (event) => {
+  if (event.target !== maintenanceBtn && !maintenanceForm.contains(event.target)) {
+    maintenanceForm.style.display = "none";
+  }
+});
+
+//mobile form 
+document.addEventListener("DOMContentLoaded", function () {
+  // सभी "open-form" क्लास वाले लिंक को सेलेक्ट करें
+  document.querySelectorAll(".open-form").forEach(function (link) {
+      link.addEventListener("click", function (e) {
+          e.preventDefault(); // लिंक का डिफ़ॉल्ट बिहेवियर रोकें
+          e.stopPropagation(); // इवेंट बबलिंग रोकें ताकि फॉर्म खुलने के तुरंत बाद बंद न हो
+
+          let formId = this.getAttribute("data-target"); // जिस फॉर्म को दिखाना है उसकी ID लें
+
+          // पहले सभी फॉर्म्स को छुपा दें
+          document.querySelectorAll(".mobileform").forEach(function (form) {
+              form.style.display = "none";
+          });
+
+          // सेलेक्टेड फॉर्म को दिखाएं
+          let selectedForm = document.getElementById(formId);
+          if (selectedForm) {
+              selectedForm.style.display = "block";
+          }
+      });
+  });
+
+  // **स्क्रीन पर कहीं भी क्लिक करने से फॉर्म छिप जाए**
+  window.addEventListener("click", function () {
+      document.querySelectorAll(".mobileform").forEach(function (form) {
+          form.style.display = "none";
+      });
+  });
+
+  // **फॉर्म पर क्लिक करने से वह हाइड न हो**
+  document.querySelectorAll(".mobileform").forEach(function (form) {
+      form.addEventListener("click", function (e) {
+          e.stopPropagation(); // इवेंट बबलिंग रोकें ताकि फॉर्म खुद पर क्लिक करने से हाइड न हो
+      });
+  });
+});
+
+
 let url =
   "https://script.google.com/macros/s/AKfycbyHP4s82qhHAsMiZ8k7fUYlCMX_K5JSgWRW_AS4FJIG8Ybdhz8sfIV2nZdtewYxocaH/exec";
 
